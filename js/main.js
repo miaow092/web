@@ -19,3 +19,29 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+//favItme hover
+const items = document.querySelectorAll('#favorite .favItem img');
+
+for(let el of items){
+
+  el.addEventListener('mouseenter', e => {
+    
+    new Anime(el,{
+      prop: "opacity",
+      value: 1,
+      duration: 200,
+    })
+    
+  })
+  el.addEventListener('mouseout', e => {
+    
+    new Anime(el,{
+      prop: "opacity",
+      value: 0.5,
+      duration: 200,
+    })
+    
+  })
+
+}

@@ -97,7 +97,7 @@ $mainColor3:#844224;
             margin-bottom: 50px;
         }
         .wrap{
-            article{
+            .favItem{
                 float: left;
                 width: 380px;
                 height: 500px;
@@ -113,6 +113,10 @@ $mainColor3:#844224;
                     background: gray;
                     border-radius: 50% 50% 0 0 / 50% 50% 0 0;
                     margin-bottom: 30px;
+                    border-left-width: 4px;
+                    transition: 1s;
+                    opacity: 0.5;
+                    //border:3px solid $mainColor;
                 }
                 h2{
                     font:25px/1 'arial';
@@ -123,6 +127,10 @@ $mainColor3:#844224;
                     font:20px/1 'arial';
                     color: #aaa;
                 }
+            &.on img{
+                transform: rotate(20deg);
+                border: 3px solid $mainColor;
+            }
             }
         }
         a{

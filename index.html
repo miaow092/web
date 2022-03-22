@@ -7,7 +7,14 @@
     <title>기업형 웹</title>
     <script src="https://kit.fontawesome.com/b6f619d630.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/anime.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     
@@ -23,113 +30,102 @@
                     <li><a href="#">LOCATION</a></li>
                 </ul>
                 <ul class="util">
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="join.html">JOIN</a></li>
                     <li><a href="#">SHOP</a></li>
-                    <li><a href="community.html">COMMUNITY</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fas fa-shopping-cart"></i></a></li>
                 </ul>
+                
             </nav>
         
         <!---햄버거 버튼--->
-            <a href="#" class="btnCall">
-                <span>메뉴호출</span>
-            </a>
-
-            <nav class="menuMo">
-                <h1>
-                    <a href="index.html">TIFFANY</a>
-                </h1>
-
-                <ul id="gnbMo">
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#">YOUTUBE</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">LOCATION</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">JOIN</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="community.html">COMMUNITY</a></li>
-                    <li><a href="#">CART</a></li>
-                </ul>
-                <ul id="sns">
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-            </nav>
+            
         </div>
     </header>
 
     <figure id="figure">
-        <div class="inner">
-            <div class="wrap">
-                <div class="img"></div>
+            <h1><a href="#"> Fashion is nothing<br> but a ☺︎ choice</a></h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">   
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
     </figure>
 
-    <!--newCollection-->
-    <section id="newCollection">
+    <!--favorite-->
+    <section id="favorite">
         <div class="inner">
-            <h1 class="h">new collection</h1>
+            <h1>Our Favorites</h1>
             <div class="wrap">
-            <article class="text">
-                <span>Lorem ipsum dolor 2022</span>
-                <h2>New Collection</h2>
-                <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eaque explicabo consectetur<br> quaerat alias est quibusdam illo voluptate sit.</p>
-                <a href="collection.html">COLLECTION<i class="fa-solid fa-angles-right"></i></a>
-            </article>
-            <article class="pic"></article>
+                <article>
+                    <img src="" alt="">
+                    <h2>Title</h2>
+                    <p>price</p>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <h2>Title</h2>
+                    <p>price</p>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <h2>Title</h2>
+                    <p>price</p>
+                </article>
             </div>
+            <a href="#">See All</a>
         </div>
     </section>
 
+
+    <!--collaboration-->
+    <section id="collaboration">
+        <div class="inner">
+            <div class="wrap">
+                <div class="pic"></div>
+                <article>
+                    <h1>Wild Fawn x Mira Lou<br>
+                    Collaboration</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est fugiat eaque dolor voluptatem, cupiditate nobis aspernatur ratione eius voluptatum harum corrupti odio consequatur, tempore ullam maiores iure ex at? Molestias.</p>
+                    <a href="#">Explore</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    
     <!--categories-->
     <section id="categories">
         <div class="inner">
-            <h1>CATEGORIES</h1>
+            <h1>Categories</h1>
             <div class="wrap">
-                <img src="img/cate1.jpg">
-                <img src="img/cate3.jpg">
-                <ul>
-                    <li>RING</li>
-                    <li>BRACELET</li>
-                    <li>NECKLACE</li>
-                    <li>EARRING</li>
-                </ul>
-                <a href="#">VIEW ALL <i class="fa-solid fa-angles-right"></i></a>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
             </div>
         </div>
     </section>
 
-    <!--popular-->
-    <section id="popular">
-        <div class="inner">
-            <article class="wrap">
-                <div class="product">
-                    <div class="img"></div>
-                </div>
-                <div class="product">Lorem</div>
-                <div class="product">ipsum</div>
-                <div class="product">
-                    <div class="img"></div>
-                </div>
-            </article>
-        </div>
-    </section>
 
-    <!--newslatter-->
-    <section id="newslatter">
+    <!--new-->
+    <section id="new">
         <div class="inner">
-            <h1>NEWSLATTER</h1>
+            <h1>NEW</h1>
             <div class="wrap">
-                <div class="img"></div>
-                <h2>Subscribe to see the<br> latest updates</h2>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Email">
-                    <input type="button" value="SUBCRIBE">
-                </form>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
             </div>
         </div>
     </section>
@@ -159,7 +155,7 @@
                 </ul>
                 <div class="circle"></div>
                 <div class="text">
-                    <span>All rights reserved - 2020 &copy TIFFANY</span><span>Terms & Conditions</span>
+                    <span>All rights reserved - 2022 &copy TIFFANY</span><span>Terms & Conditions</span>
                     <span>Website by Lorem</span>
                 </div>
             </div>

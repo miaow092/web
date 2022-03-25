@@ -12,7 +12,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script defer src="js/main.js"></script>
-    <script defer src="js/anime.js"></script>
+    <script defer src="js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
@@ -26,13 +26,13 @@
                 <ul class="menuWeb">
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#">YOUTUBE</a></li>
-                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="#">LOCATION</a></li>
                 </ul>
                 <ul class="util">
                     <li><a href="#">SHOP</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">JOIN</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="join.html">JOIN</a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="fas fa-user"></i></a></li>
                     <li><a href="#"><i class="fas fas fa-shopping-cart"></i></a></li>
@@ -40,11 +40,38 @@
                 
             </nav>
         
-        <!---햄버거 버튼--->
-            
+            <!---햄버거 버튼--->
+            <a href="#" class="btnCall">
+                <span class="h">메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">TIFFANY</a>
+                </h1>
+
+                <ul id="gnbMo">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="#">LOCATION</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+                <ul id="sns">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
+    
+    
+    <!--figure-->
     <figure id="figure">
             <h1><a href="#"> Fashion is nothing<br> but a ☺︎ choice</a></h1>
             <div class="swiper mySwiper">
@@ -55,7 +82,9 @@
                     <div class="swiper-slide"></div>
                     <div class="swiper-slide"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!--좌우버튼-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
     </figure>
 
@@ -65,17 +94,17 @@
             <h1>Our Favorites</h1>
             <div class="wrap">
                 <article class="favItem">
-                    <img src="img/hover.jpg" alt="">
+                    <img src="" alt="">
                     <h2>Title</h2>
                     <p>price</p>
                 </article>
                 <article class="favItem">
-                    <img src="img/hover.jpg" alt="">
+                    <img src="" alt="">
                     <h2>Title</h2>
                     <p>price</p>
                 </article>
                 <article class="favItem">
-                    <img src="img/hover.jpg" alt="">
+                    <img src="" alt="">
                     <h2>Title</h2>
                     <p>price</p>
                 </article>
@@ -105,27 +134,34 @@
         <div class="inner">
             <h1>Categories</h1>
             <div class="wrap">
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-            </div>
-        </div>
-    </section>
-
-
-    <!--new-->
-    <section id="new">
-        <div class="inner">
-            <h1>NEW</h1>
-            <div class="wrap">
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
+                <article>
+                    <div>
+                        <div class="img"></div>
+                    </div>
+                </article>
+                <article>
+                        <div class="img"></div>
+                </article>
+                <article>
+                    <div>
+                        <div class="img"></div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <div class="img"></div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <div class="img"></div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <div class="img"></div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>

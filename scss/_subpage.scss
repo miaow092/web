@@ -2,183 +2,69 @@
 
 
 
-//header_sub
+//header
 #header_sub{
     width: 100%;
-    background: $mainColor2;
-    
+    position: absolute;
+    top:0; left: 0;
+    z-index: 3;
     .inner{
         width: 1180px;
         height: 80px;
         margin: 0 auto;
-        position: relative;
-        >h1{
+        h1{
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            font: bold 40px/80px 'Fredericka the Great';
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
         }
         .menuWeb{
-            position: absolute;
-            left: 0; top:50%;
-            transform: translateY(-50%);
+            float:left;
             li{
-                float: left;
-                font: 18px/100px 'arial';
+                float:left;
                 margin-right: 20px;
+                cursor: pointer;
+                a{  
+                    font: 15px/80px 'arial';
+                }
             }
         }
         .util{
-            position: absolute;
-            right: 0; top:50%;
-            transform: translateY(-50%);
+            float:right;
             li{
-                float: left; top:50%;
-                font: 18px/100px 'arial';
+                float:left;
                 margin-left: 20px;
-            }
-        }
-        //햄버거 버튼
-        .btnCall{
-            width: 20px;
-            height: 20px;
-            position: fixed;
-            right: 20px;
-            top: 20px;
-            z-index: 6;
-            display: none;
-            &::before {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 3px;
-                background: black;
-                position: absolute;
-                top: 0;
-                left: 0;
-                border-radius: 1px;
-                transition: top 0.5s 0s, transform 0.5s 0.5s;
-            }
-            &::after {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 3px;
-                background: black;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                border-radius: 1px;
-                transition: bottom 0.5s 0s, transform 0.5s 0.5s;
-            }
-            span {
-                display: block;
-                width: 100%;
-                height: 3px;
-                background: black;
-                position: absolute;
-                top: 50%;
-                margin-top: -1px;
-                border-radius: 1px;
-                left: 0;
-                transition: all 0.5s;
-                text-indent:-9999px; 
-            }
-
-            &.on {
-				&::before {
-					top: 50%;
-					margin-top: -1px;
-					transform: rotate(45deg);
-				}
-				&::after {
-					bottom: 50%;
-					margin-bottom: -1px;
-					transform: rotate(-45deg);
-				}
-				span {
-					transform: translateX(100%);
-					opacity: 0;
-				}
-			}
-
-        }
-        .menuMo {
-            width: 200px;
-            height: 100vh;
-            position: fixed;
-            top:0;
-            right: -210px;
-            z-index: 5;
-            margin: 10px;
-            background: #d89a8f;
-            border-radius: 10px;
-            opacity: 0.7;
-            transition: .3s;
-
-            &.on{
-                right: 0;
-            }
-
-            h1{
-                font-size: 25px;
-                position: absolute;
-                top:10px; left: 10px;
-                font: 25px/1 'Fredericka the Great';
-            }
-            #gnbMo{
-                margin-top: 50px;
-                li {
-					a {
-						display: block;
-						width: 100%;
-						padding: 20px 0;
-						font: bold 14px/1 "arial";
-						color: #000;
-						text-align: center;
-					}
-				}
-            }
-
-            #sns{
-                position: absolute;
-                bottom:15px;
-                left: 10px;
-                li{
-                    &::after{content:''; display: block; clear: both;}
-                    &:nth-child(1){
-                        float: left;
-                        margin-right: 50px;
-                    }
-                    &:nth-child(2){
-                        float: left;
-                        margin-right: 50px;
-                    }
-                    &:nth-child(3){
-                        float: right;
-                    }
-                    a{
-                        font: 25px/1 'arial';
-                    }
+                cursor: pointer;
+                a{  
+                    font: 15px/80px 'arial';
                 }
             }
-            &:hover{
-                opacity: 1;
-            }
+        }
+        .menuMo{
+            display: none;
         }
     }
 }
 
 
-//서브페이지 메인
+/*sube page*/
 .content{
+    width: 100%;
     .sub_visual{
-        width: 100%; height: 300px;
-        background: url(../img/sub2.jpg) no-repeat top/cover fixed;
-            h1{
-                font: bold 60px/300px 'Cormorant';
-                color: #444;
-                text-align: center;
+        width: 100%;
+        height: 380px;
+        background: mediumseagreen;
+        h1{
+            font: 70px/380px 'arial';
+            text-align: center;
+            width: 50%;
+            color:#fff;
+            float: left;
+        }
+        .pic{
+            width: 50%;
+            height: 380px;
+            background: #999;
+            float: left;
         }
     }
 }
@@ -190,7 +76,7 @@
 /*footer_sub*/
 #footer_sub{
     width: 100%;
-    background: $mainColor2;
+    background: mediumseagreen;
     position: relative;
     .inner{
         position: relative;

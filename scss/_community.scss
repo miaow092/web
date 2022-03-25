@@ -2,23 +2,26 @@
 
 
 .community{
+    .sub_visual{
+        background-color: mediumpurple;
+    }
     .inner_content{
         padding: 100px 50px;
         width: 1180px;
         margin:0 auto;
         table{
             width:100%; 
-            border-bottom:5px solid #db8f7d; 
+            border-bottom:5px solid mediumpurple; 
             margin-bottom:50px; 
             border-collapse: collapse;
             .h{display: none;}
             tr{
                 background:#fff; 
                 &:hover{
-                    background:$mainColor; 
+                    background:rgba(147, 112, 216, 0.6); 
                 }
                 th{
-                    padding:20px; background: #db8f7d; 
+                    padding:20px; background: mediumpurple; 
                     color:#fff; 
 
                     &:nth-of-type(1){ width:10%; }
@@ -53,7 +56,7 @@
                 line-height: 45px;
                 font-size:30px; color:#fff; 
                 text-align:center; 
-                background:#db8f7d; 
+                background:mediumpurple; 
             }
             .next{
                 float:right; 
@@ -63,7 +66,7 @@
                 font-size:30px; color:#fff; 
                 line-height: 45px;
                 text-align:center; 
-                background:#db8f7d;
+                background:mediumpurple;
             }
 
             .numbers{
@@ -72,13 +75,13 @@
                 a{
                     display:inline-block; 
                     width:40px; height:40px; 
-                    font:15px/40px 'arial'; color:#db8f7d; 
+                    font:15px/40px 'arial'; color:mediumpurple; 
                     border-radius: 50%;
                     margin:0 8px; 
                     transition:0.5s; 
 
                     &:hover{
-                        background:#db8f7d; 
+                        background:mediumpurple; 
                         color:#fff; 
                     }
                 }
@@ -87,6 +90,56 @@
     }
 }
 
+#footer_sub_community{
+    width: 100%;
+    background:mediumpurple;
+    position: relative;
+    .inner{
+        position: relative;
+        width: 1180px;
+        margin: 0 auto;
+        h1{
+            text-align: center;
+            font: 40px/1 'Fredericka the Great';
+            color: #000; letter-spacing: 3px;
+            padding: 50px 0 80px;
+        }
+        .wrap{
+            ul{
+                float: left;
+                margin-bottom: 150px;
+                margin-right: 100px;
+                li{
+                    margin-bottom: 15px;
+                    &:nth-child(1){
+                        font: bold 18px/1 'arial';
+                    }
+                }
+            }
+            .circle{
+                width: 100px; height: 100px;
+                border-radius: 50%;
+                background: gray;
+                float: right;
+            }
+            .text{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                margin-bottom: 30px;
+                span{
+                    margin-right: 100px;
+                    display: inline-block;
+                    &:nth-child(3){
+                        float: right;
+                        margin-right: 0;
+
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*tablet -----------------------------------------------*/

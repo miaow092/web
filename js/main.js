@@ -1,47 +1,19 @@
-//swiper
-var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: -300,
-    depth: 0,
-    modifier: 1,
-    slideShadows: false,
-  },
-  slidesPerView: 3,
-  grabCursor: true,
-  loop: true,
-  speed:500,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+//figure 배경색 바꾸기
+const figure = document.querySelector('#figure');
+const next = document.querySelector('.swiper-button-next');
+const prev = document.querySelector('.swiper-button-prev');
+const bgColors = ['royalblue', 'mediumseagreen', 'coral', 'deeppink'];
 
-//favItme hover
-const items = document.querySelectorAll('#favorite .favItem img');
+figure.style.backgroundColor = bgColors[0];
 
-for(let el of items){
+next.addEventListener('click', ()=>{
+  
+  color = figure.style.backgroundColor;
 
-  el.addEventListener('mouseenter', e => {
-    
-    new Anime(el,{
-      prop: "opacity",
-      value: 1,
-      duration: 200,
-    })
-    
-  })
-  el.addEventListener('mouseout', e => {
-    
-    new Anime(el,{
-      prop: "opacity",
-      value: 0.5,
-      duration: 200,
-    })
-    
-  })
-
-}
+  if(figure.style.backgroundColor = bgColors[0]){
+    figure.style.backgroundColor = bgColors[1]
+  }else if(figure.style.backgroundColor = bgColors[1]){
+    figure.style.backgroundColor = bgColors[2]
+  }
+  //왜 안 될까....
+})

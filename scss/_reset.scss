@@ -1,7 +1,8 @@
-*{margin: 0; padding:0; box-sizing: border-box;}
-ul,li,ol{list-style: none;}
-.wrap::after{content: ''; display: block; clear: both;}
-a{text-decoration: none; color: black;}
-.h{
-    position: absolute; opacity: 0; left: -999px;
-}
+@charset 'utf-8';
+
+*{margin:0; padding: 0; box-sizing: border-box;
+font-family: 'Lato';}
+li, ul, ol{list-style: none;}
+a{text-decoration: none;}
+.h{position: absolute; top:-999px; opacity: 0;}
+.wrap::after{display: block; content:''; clear:both;}

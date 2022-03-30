@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lato&display=swap');//본문
 
 @import 'reset.scss';
+@import 'subpage.scss';
+@import 'about.scss';
 
 
 //header
@@ -132,42 +134,134 @@
 #figure{
     width: 100%;
     height: calc(100vh - 80px);
+    overflow: hidden;
     background-color: #F3E9E0;
-    padding: 80px 0;
-        .swiper{
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-                .swiper-slide{
-                    width: 480px;
-                    height: 580px;
-                    img{
+    padding-top: 50px;
+    position: relative;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        .popup{
+            display: none;
+            width: 400px;
+            position: absolute;
+            top: -50px; left: 0px;
+            z-index: 3;
+    
+            .top{
+                width: 0%; height: 1px;
+                background: #111;
+                position: absolute;
+                top:0; left:0;
+            }
+            .rigth{
+                height: 0%; width: 1px;
+                background: #111;
+                position: absolute;
+                top:0; right:0;
+            }
+            .bottom{
+                width: 0%; height: 1px;
+                background: #111;
+                position: absolute;
+                bottom:0; right:0;
+            }
+            .left{
+                height: 0%; width: 1px;
+                background: #111;
+                position: absolute;
+                top:0; left:0;
+            }
+            .inner{
+                width:100%; 
+                background:#E7DDD4;
+                padding: 50px 30px 30px 30px;
+                //opacity: 0;
+                .line{
+                    position: absolute;
+                    top: 0; left:0;
+                    width: 400px;
+                    height: 50px;
+                    background: #A52F1D;
+                    color:#F3E9E0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    span{
+                        transform: translateX(30px);
+                        font: bolder 20px/50px 'arial';
+                        display: inline-block;
+                        text-align: center;
+                        padding: 0 30px;
+                        animation: line 5s linear infinite alternate;
+                    }
+                }
+                .text{
+                    text-align: center;
+                    font:bolder 80px/1 'arial';
+                    padding: 20px 0;
+                }
+                .content{
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        color:#111;
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .swiper{
+        svg {
+            width: 50px; height: 50px;
+            position: absolute;
+            fill:transparent; 
+            stroke:#000; 
+            stroke-width:20;
+            stroke-dasharray:4694; 
+            stroke-dashoffset:4694;
+            animation: stroke 3s ease 0s both;
+            &:nth-child(1){top:0; left:10%;}
+            &:nth-child(2){top:10%; right:20%;}
+            &:nth-child(3){bottom: 0; left:20%;}
+            &:nth-child(4){bottom: 50%; left:20%;}
+            &:nth-child(5){bottom: 10%; right:10%;}
+        }
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+            .swiper-slide{
+                width: 480px;
+                height: 580px;
+                position: relative;
+                img{
+                    clip-path: inset(1px 30px 1px 30px round 40%);
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    clip-path: inset(1px 30px 1px 30px round 40%);
-                    background: #eee;
                     }
-                    .tex{
-                        position: absolute;
-                        bottom: 50px; left:-80px;
-                        h1{
-                            opacity: 0;
-                            font: 35px/1 'Gilda Display';
-                            margin-bottom: 15px;
-                            color:#A52F1D;
-                            position: relative;
-                            transform: translateY(-50px);
-                            transition: transform .5s cubic-bezier(0.175, 0.885, 0.390, 1.650) .5s;
+                .tex{
+                    position: absolute;
+                    bottom: 50px; left:-80px;
+                    h1{
+                        opacity: 0;
+                        font: 35px/1 'Gilda Display';
+                        margin-bottom: 15px;
+                        color:#A52F1D;
+                        position: relative;
+                        transform: translateY(-50px);
+                        transition: transform .5s cubic-bezier(0.175, 0.885, 0.390, 1.650) .5s;
                         }
-                        p{
-                            opacity: 0;
-                            font:15px/1.4 'Lato';
-                            color:#555;
-                        }
+                    p{
+                        opacity: 0;
+                        font:15px/1.4 'Lato';
+                        color:#555;
                     }
-
                 }
+            }
             .swiper-slide-active{
                 .tex{
                     h1{
@@ -183,17 +277,26 @@
         }
         .swiper-button-next{
             position:absolute;
-            top:53%; right: 30%;
+            top:53%; right: 28%;
             color: #A52F1D;
         }
         .swiper-button-prev{
             position: absolute;
             color: #A52F1D;
-            top:53%; left: 30%;
+            top:53%; left: 28%;
         }
     }
 }
-    
+
+@keyframes line{
+    0%{transform: translateX(30px);}
+    100%{transform: translateX(-200px);}
+}
+@keyframes stroke{
+    0%{stroke-dashoffset: 4694;}
+    100%{stroke-dashoffset: 0;}
+}
+
 
 //favorite
 #favorite{
@@ -554,6 +657,7 @@
     }
 }
 
+
 @keyframes ani{
     0%{opacity: 0;}
     50%{opacity: 0.5;}
@@ -563,196 +667,168 @@
 //tablet
 @media screen and (max-width: 1179px){
 
-//header
-#header{
-    .inner{
-        width: 100%;
-        >h1{
-            position: absolute;
-            top: 10px; left: 30px;
-            transform: translate(0, 0);
-        }
-        .menuWeb{
-            display: none;
-        }
-        .util{
-            display: none;
-        }
-        //햄버거 버튼
-        .btnCall{
-            display: block;
+    //header
+    #header{
+        .inner{
+            width: 100%;
+            >h1{
+                position: absolute;
+                top: 10px; left: 30px;
+                transform: translate(0, 0);
+            }
+            .menuWeb{
+                display: none;
+            }
+            .util{
+                display: none;
+            }
+            //햄버거 버튼
+            .btnCall{
+                display: block;
+            }
         }
     }
-}
 
-//figure
-#figure{
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-color: #F3E9E0;
-    padding: 80px 0;
+    //figure
+    #figure{
         .swiper{
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-                .swiper-slide{
-                    width: 480px;
-                    height: 580px;
-                    img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    clip-path: inset(1px 30px 1px 30px round 40%);
-                    background: #eee;
-                    }
-                    .tex{
-                        position: absolute;
-                        bottom: 50px; left:-80px;
-                        h1{
-                            opacity: 0;
-                            font: 35px/1 'Gilda Display';
-                            margin-bottom: 15px;
-                            color:#A52F1D;
-                            position: relative;
-                            transform: translateY(-50px);
-                            transition: transform .5s cubic-bezier(0.175, 0.885, 0.390, 1.650) .5s;
-                        }
-                        p{
-                            opacity: 0;
-                            font:15px/1.4 'Lato';
-                            color:#555;
-                        }
-                    }
-
-                }
-            .swiper-slide-active{
-                .tex{
-                    h1{
-                        animation: ani 1s ease 0.5s;
-                        animation-fill-mode: both;
-                        transform: translateY(0);
-                    }
-                    p{
-                        opacity: 1;
-                    }   
-                }
+            .swiper-button-next{
+                top:53%; right: 10%;
             }
-        }
-        .swiper-button-next{
-            position:absolute;
-            top:53%; right: 30%;
-            color: #A52F1D;
-        }
-        .swiper-button-prev{
-            position: absolute;
-            color: #A52F1D;
-            top:53%; left: 30%;
-        }
-    }
-}
-    
-
-//favorite
-#favorite{
-    padding: 50px 20px;
-    .inner{
-        width: 100%;
-        .wrap{
-            .favItem{
-                width: 33%;
-                margin-right: 0.5%;
+            .swiper-button-prev{
+                top:53%; left: 10%;
             }
         }
     }
-}
 
-//collaboration
-#collaboration{
-    padding: 50px 20px;
-    .inner{
-        width: 100%;
-        article{
-            text-align: center;
-            h1{
-                padding-top: 50px;
-            }
-            img{
-                width: 100%; height: 100%;
-            }
-            &.text{
-                padding:30px;
+        
+    //favorite
+    #favorite{
+        padding: 50px 20px;
+        .inner{
+            width: 100%;
+            .wrap{
+                .favItem{
+                    width: 33%;
+                    margin-right: 0.5%;
+                }
             }
         }
     }
-}
 
-//categories
-#categories{
-    padding:50px 20px;
-    .inner{
-        width: 100%;
-        .wrap{
-            article{
-                margin: 0 2% 2% 0;
-                width: 49%;
-                &:nth-child(4){
-                    width: 49%;
-                    margin-right: 0;
-                }
-                &:nth-child(3){
-                    margin-right: 2%;
-                }
-                &:nth-child(2){
-                    margin-right: 0;
-                }
-                &:nth-child(5){
-                    width: 100%;
-                }
-            }
-        }    
-    }
-}
-
-//about
-#about{
-    padding: 50px 20px;
-    .inner{
-        width: 100%;
-        .wrap{
+    //collaboration
+    #collaboration{
+        padding: 50px 20px;
+        .inner{
+            width: 100%;
             article{
                 text-align: center;
-                &.text{
-                    padding: 30px;
-                    h1{
-                        padding-top: 30px;
-                        margin-bottom: 30px; 
-                    }
-                    p{
-                        margin-bottom: 30px;
-                    }
-                    .secend{
-                        margin-bottom: 50px;
-                    }
+                h1{
+                    padding-top: 50px;
                 }
                 img{
-                width: 100%; height: 100%;
+                    width: 100%; height: 100%;
+                }
+                &.text{
+                    padding:30px;
                 }
             }
         }
     }
-}
 
-#footer{
-    padding: 50px 20px;
-    .inner{
-        width: 100%;
+    //categories
+    #categories{
+        padding:50px 20px;
+        .inner{
+            width: 100%;
+            .wrap{
+                article{
+                    margin: 0 2% 2% 0;
+                    width: 49%;
+                    &:nth-child(4){
+                        width: 49%;
+                        margin-right: 0;
+                    }
+                    &:nth-child(3){
+                        margin-right: 2%;
+                    }
+                    &:nth-child(2){
+                        margin-right: 0;
+                    }
+                    &:nth-child(5){
+                        width: 100%;
+                    }
+                }
+            }    
+        }
     }
-}
+
+    //about
+    #about{
+        padding: 50px 20px;
+        .inner{
+            width: 100%;
+            .wrap{
+                article{
+                    text-align: center;
+                    &.text{
+                        padding: 30px;
+                        h1{
+                            padding-top: 30px;
+                            margin-bottom: 30px; 
+                        }
+                        p{
+                            margin-bottom: 30px;
+                        }
+                        .secend{
+                            margin-bottom: 50px;
+                        }
+                    }
+                    img{
+                    width: 100%; height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer{
+        padding: 50px 20px;
+        .inner{
+            width: 100%;
+        }
+    }
 
 }
 
 @media screen and (max-width: 800px){
     
+    #figure{
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .tex{
+                        width: 400px;
+                        position: absolute;
+                        bottom: 40px; left:50%;
+                        transform: translateX(-50%);
+                        text-align: center;
+                        p{
+                            display: inline;
+                            background-color: #F3E9E0;
+                        }
+                    }
+                }
+            }
+            .swiper-button-next{
+                right: 5%;
+            }
+            .swiper-button-prev{
+                left: 5%;
+            }
+        }
+    }
+
     #collaboration{
         .inner{
             article{
@@ -808,7 +884,38 @@
 
 //mobile
 @media screen and (max-width: 539px){
-        
+    
+    //figure
+#figure{
+    padding-top:30px;
+    .swiper{
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 100%;
+                .tex{
+                    width: 350px;
+                    bottom: -60px; left:50%;
+                    transform: translateX(-50%);
+                    p{
+                        display: inline;
+                        background-color: rgba(0,0,0,0);
+                    }
+                }
+            }
+        }
+        .swiper-button-next{
+            position:absolute;
+            top:53%; right: 28%;
+            color: #A52F1D;
+        }
+        .swiper-button-prev{
+            position: absolute;
+            color: #A52F1D;
+            top:53%; left: 28%;
+        }
+    }
+}
+
     //favorite
     #favorite{
         padding: 50px 20px 100px;

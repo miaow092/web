@@ -543,7 +543,8 @@ aside {
     position: absolute;
     top: 40px;
     right: 40px;
-    color: #A52F1D; }
+    color: #A52F1D;
+    cursor: pointer; }
 
 .map {
   width: 100%;

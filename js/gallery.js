@@ -1,41 +1,84 @@
-/**
- * 키 554ae9d07ac78ae8534bc6998305d288
- * 
- * 
- * https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg
- * url : https://www.flickr.com/services/rest/?
- * 
- * 버디 아이콘
-모든 flickr 사용자는 자신을 표시하는 데 사용하는 48x48 픽셀의 버디 아이콘이 있습니다.
-
-사진을 지도로 끌어다 놓아서(사진관리 사용) 사진 촬영지를 표시하거나 세계 지도를 찾아서 다른 사람들이 어디에 갔다 왔고 무엇을 보았는지를 볼 수 있습니다.
-
-아이콘 서버가 0보다 크면 url은 다음 형식입니다.
-
-http://farm{icon-farm}.staticflickr.com/{icon-server}/buddyicons/{nsid}.jpg
-그렇지 않은 경우에는 다음 url이 사용되어야 합니다.
-
-https://www.flickr.com/images/buddyicon.gif
-*/
-
+const body = document.querySelector('body');
 const section = document.querySelector('.gallery .content_sub .inner section');
+const input = document.querySelector('#search');
+const btnSearch = document.querySelector('.btnSearch');
 const loading = document.querySelector('.loading');
 const base = 'https://www.flickr.com/services/rest/?';
 const method_interest = 'flickr.interestingness.getList';
+const method_search = 'flickr.photos.search';
 const key = '554ae9d07ac78ae8534bc6998305d288';
 const per_page = 50;
 const url = `${base}method=${method_interest}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
 
-fetch(url)
+callDate(url);
+
+btnSearch.addEventListener('click', e=>{
+    let tag = input.value;
+    const url = `&{base}method=${method_search}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&privacy_filter=1&tags=${tag}`;
+
+    callDate(url)
+})
+
+section.addEventListener('click', e=>{
+    e.preventDefault();
+    
+    let target = e.target.closest('.item').querySelector('.pic img');
+
+    if(e.target == target){
+        let imgSrc = e.target.parentElement.getAttribute('href');
+
+        let pop = document.createElement('aside');
+        pop.classList.add('pop');
+        let pops =`
+            <div class='con'>
+                <img src=${imgSrc}>
+            </div>
+            <span class='close'>Close</span>
+        `;
+        pop.innerHTML = pops;
+        body.append(pop);    
+        body.style.overflow = 'hidden';    
+    }
+});
+
+body.addEventListener('click', e=>{
+    let pop = body.querySelector('.pop');
+    
+    if(pop){
+        let close = pop.querySelector('.close');
+        if(e. target == close){
+            pop.remove();
+            body.style.overflow = 'auto';
+        }
+    }
+})
+
+
+
+/*fetch(url)
 .then(data=>{
     return data.json();
 })
 .then(json=>{
     const items = json.photos.photo;
+    console.log(items);
     creatLine(items);
     imgLoaded();
     
-})
+})*/
+
+function callDate(url){
+    fetch(url)
+    .then(data=>{
+        return data.json();
+    })
+    .then(json=>{
+        const items = json.photos.photo;
+        console.log(items);
+        creatLine(items);
+        imgLoaded();
+    })
+} 
 
 function creatLine(items){
     let gallery = '';
@@ -56,23 +99,6 @@ function creatLine(items){
 
     section.innerHTML = gallery;
 }
-
-section.addEventListener("click", e=>{
-    e.preventDefault(); 
-
-    let imgSrc = e.target.parentElement.getAttribute("href"); 
-
-    let pop = document.createElement("aside"); 
-    pop.classList.add("pop"); 
-    let pops =`
-                <div class="con">
-                    <img src="${imgSrc}">
-                </div>
-                <span class="close">close</span>
-    `;
-    pop.innerHTML = pops; 
-    body.append(pop); 
-})
 
 function imgLoaded(){
     const thumbs = document.querySelectorAll('.pic img');

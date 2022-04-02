@@ -14,7 +14,7 @@ callDate(url);
 
 btnSearch.addEventListener('click', e=>{
     let tag = input.value;
-    const url = `&{base}method=${method_search}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&privacy_filter=1&tags=${tag}`;
+    const url = `${base}method=${method_search}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&privacy_filter=1&tags=${tag}`;
 
     callDate(url)
 })

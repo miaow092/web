@@ -10,6 +10,7 @@
 @import 'youtube.scss';
 @import 'gallery.scss';
 @import 'location.scss';
+@import 'join.scss';
 
 
 //header
@@ -220,10 +221,10 @@
 
     .swiper{
         svg {
-            width: 50px; height: 50px;
+            width: 20px; height: 20px;
             position: absolute;
             fill:transparent; 
-            stroke:#000; 
+            stroke: #A52F1D; 
             stroke-width:20;
             stroke-dasharray:4694; 
             stroke-dashoffset:4694;

@@ -64,322 +64,176 @@
     </header>
 
      <!---content--->
-     <section class="content">
+    <section class="content join">
         <div class="sub_visual">
             <div class="inner">
-                <div class="img"></div>
+                <div class="img">
+                    <h1>Join</h1>
+                </div>
             </div>
         </div>
 
-        <div class="inner_content">
-            <h2>CONTACT</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eum blanditiis nam fugiat, quod assumenda dignissimos quis optio suscipit quasi cum ratione obcaecati itaque veritatis.</p>
-            <span>Lorem ipsum dolor sit amet.</span>
-            <form action="result.html">
+        <div class="content_sub">
+            <div class="inner">
+                <div class="wrap">
+                    <form action="result.html">
+                        <fieldset>
+                            <legend class="h"> 회원 가입 양식</legend>
+                            <h1><label for="terms">Check out the terms and conditions.</label></h1>
+                            <textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus perferendis voluptates extionem error saepe qui quia esse recusandae vero voluptatem neque dolorum ab voluptas asperiores laboriosam iste officiis, eveniet suscipit animi? Quo suscipit corporis est perferendis dolor laborum magni ducimus rerum saepe totam ad tenetur assumenda veniam deleniti repudiandae, molestiae dolorem sit modi. Obcaecati, quo excepturi rerum, facilis et omnis aspernatur commodi earum doloremque impedit dolorum. Repellat voluptates reiciendis natus odio, laboriosam, nihil sapiente suscipit, ex harum cum obcaecati provident? Iure sapiente minima inventore, quas officia quis saepe, dolore deleniti ea omnis est, ad incidunt corporis totam ipsa ullam deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium vitae laboriosam architecto voluptas quibusdam, sit iusto? Ullam, maxime atque.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </textarea>
+                            <div class="agreement">
+                                <input type="checkbox" name="agree" id="agree">
+                                <label for="agree">I agree to the terms and conditions</label>
+                            </div>
 
-                <fieldset>
-                    <legend class="h"> 회원 가입 양식</legend>
-                    
-                    <table>
-                        <caption class="h">아이디 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="id">ID</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="id" id="id" placeholder="Please enter your ID" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <table class="t_name">
+                                <caption class="h">이름 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="name">NAME</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <table class="t_id">
+                                <caption class="h">아이디 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="id">ID</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="id" id="id" placeholder="Please enter your ID" required>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                    <table>
-                        <caption class="h">비밀번호 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="password1">PASSWORD</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="password" name="password1" id="password1" placeholder="Please enter your password" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
 
-                    <table>
-                        <caption class="h">비밀번호 재입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="password2">RE-PASSWORD</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="password" name="password2" id="password2" placeholder="Please re-enter your password" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <table>
+                                <caption class="h">비밀번호 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="password">PASSWORD</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="password" name="password" id="password" placeholder="Please enter your password" required>
+                                            <input type="password" name="password" id="password" placeholder="Please re-enter your password" required>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <table>
+                                <caption class="h">메일 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="email">E-MAIL</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="email" id="email" placeholder="Please enter your e-mail" required>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <table>
+                                <caption class="h">휴대전화 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="ph">PHONE NUMBER</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="ph" id="ph" placeholder="Please enter your phone number" required>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <table>
+                                <caption class="h">주소 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="adress">ADRESS</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="adress" id="adress" placeholder="Please enter your adress" required>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                    <table>
-                        <caption class="h">생년월일 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="birthday" >DATE OF BIRTH</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="birthday" id="birthday" minlength="4" maxlength="4" placeholder="Year">
-                                    <input type="number" name="birthday" id="birthday" min="1" max="12" placeholder="month">
-                                    <input type="text" name="birthday" id="birthday" minlength="1" maxlength="2" placeholder="date">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <table>
+                                <caption class="h">생년월일 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="birthday" >DATE OF BIRTH</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="birthday" id="birthday" minlength="4" maxlength="4" placeholder="Year">
+                                            <input type="number" name="birthday" id="birthday" min="1" max="12" placeholder="month">
+                                            <input type="text" name="birthday" id="birthday" minlength="1" maxlength="2" placeholder="date">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                    <table>
-                        <caption class="h">메일 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="email">E-MAIL</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="email" id="email" placeholder="Please enter your e-mail" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <table>
+                                <caption class="h">코멘트 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="comments">COMMENTS</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="comments" id="comments" placeholder="Please enter your comments">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                    <table>
-                        <caption class="h">휴대전화 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="ph">PHONE NUMBER</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="ph" id="ph" placeholder="Please enter your phone number" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <input type="reset" value="CANCEL">
+                            <input type="submit" value="SUBMIT">
+                            
+                        </fieldset>
+                    </form>
 
-                    <table>
-                        <caption class="h">코멘트 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="comments">COMMENTS</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="comments" id="comments" placeholder="Please enter your comments">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <h3><label for="terms">Check out the terms and conditions.</label></h3>
-                    <textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus perferendis voluptates exercitationem error saepe qui quia esse recusandae vero voluptatem neque dolorum ab voluptas asperiores laboriosam iste officiis, eveniet suscipit animi? Quo suscipit corporis est perferendis dolor laborum magni ducimus rerum saepe totam ad tenetur assumenda veniam deleniti repudiandae, molestiae dolorem sit modi. Obcaecati, quo excepturi rerum, facilis et omnis aspernatur commodi earum doloremque impedit dolorum. Repellat voluptates reiciendis natus odio, laboriosam, nihil sapiente suscipit, ex harum cum obcaecati provident? Iure sapiente minima inventore, quas officia quis saepe, dolore deleniti ea omnis est, ad incidunt corporis totam ipsa ullam deserunt.
-                    </textarea>
-                    <div class="agreement">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label for="agree">I agree to the terms and conditions</label>
+                    <div class="pic">
+                        <div class="img"></div>
                     </div>
-
-                </fieldset>
-
-            </form>
+                </div>
+            </div>
         </div>
 
     </section>
-    <!----
-    <section class="content join">
-        <div class="sub_visual">
-            <h1>Join</h1>
-        </div>
-
-        <div class="inner_content">
-            <form action="result.html">
-                <fieldset>
-                    <legend class="h"> 회원 가입 양식</legend>
-                    <h2><label for="terms">Check out the terms and conditions.</label></h2>
-                    <textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus perferendis voluptates exercitationem error saepe qui quia esse recusandae vero voluptatem neque dolorum ab voluptas asperiores laboriosam iste officiis, eveniet suscipit animi? Quo suscipit corporis est perferendis dolor laborum magni ducimus rerum saepe totam ad tenetur assumenda veniam deleniti repudiandae, molestiae dolorem sit modi. Obcaecati, quo excepturi rerum, facilis et omnis aspernatur commodi earum doloremque impedit dolorum. Repellat voluptates reiciendis natus odio, laboriosam, nihil sapiente suscipit, ex harum cum obcaecati provident? Iure sapiente minima inventore, quas officia quis saepe, dolore deleniti ea omnis est, ad incidunt corporis totam ipsa ullam deserunt.
-                    </textarea>
-                    <div class="agreement">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label for="agree">I agree to the terms and conditions</label>
-                    </div>
-
-                    <table>
-                        <caption class="h">아이디 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="id">ID</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="id" id="id" placeholder="Please enter your ID" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table>
-                        <caption class="h">비밀번호 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="password1">PASSWORD</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="password" name="password1" id="password1" placeholder="Please enter your password" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table>
-                        <caption class="h">비밀번호 재입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="password2">RE-PASSWORD</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="password" name="password2" id="password2" placeholder="Please re-enter your password" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table>
-                        <caption class="h">이름 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="name">NAME</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="name" id="name" placeholder="Please enter your name" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table>
-                        <caption class="h">생년월일 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="birthday" >DATE OF BIRTH</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="birthday" id="birthday" minlength="4" maxlength="4" placeholder="Year">
-                                    <input type="number" name="birthday" id="birthday" min="1" max="12" placeholder="month">
-                                    <input type="text" name="birthday" id="birthday" minlength="1" maxlength="2" placeholder="date">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table>
-                        <caption class="h">메일 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="email">E-MAIL</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="email" id="email" placeholder="Please enter your e-mail" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table>
-                        <caption class="h">휴대전화 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="ph">PHONE NUMBER</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="ph" id="ph" placeholder="Please enter your phone number" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table>
-                        <caption class="h">주소 입력 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="adress">ADRESS</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="adress" id="adress" placeholder="Please enter your adress" required>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table>
-                        <caption class="h">코멘트 테이블</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col"><label for="comments">COMMENTS</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" name="comments" id="comments" placeholder="Please enter your comments">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <input type="reset" value="CANCEL">
-                    <input type="submit" value="SUBMIT">
-                    
-                </fieldset>
-            </form>
-        </div>
-    </section>
-        ---->
 
     <!--footer_sub-->
     <footer id="footer_sub">

@@ -472,23 +472,11 @@ aside {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 30px 5px; }
+        padding: 20px 0; }
         .gallery .content_sub .inner main #searchBox input {
-          height: 30px;
-          width: 100%;
-          border: none;
-          background: #E7DDD4;
-          border-bottom: 1px solid #A52F1D;
-          outline: none; }
+          border: none; }
         .gallery .content_sub .inner main #searchBox .btnSearch {
-          background: #E7DDD4;
-          border: none;
-          width: 100px;
-          margin-left: 30px;
-          font-size: 20px; }
-          .gallery .content_sub .inner main #searchBox .btnSearch:hover {
-            border-radius: 50px;
-            border: 1px solid #A52F1D; }
+          border: none; }
       .gallery .content_sub .inner main .loading {
         width: 300px;
         position: absolute;
@@ -596,82 +584,6 @@ aside {
     .branch li.on a {
       background: #fff;
       color: #333; }
-
-.join .content_sub {
-  background: #E7DDD4; }
-  .join .content_sub .inner {
-    width: 1180px;
-    margin: 0 auto; }
-    .join .content_sub .inner .wrap {
-      width: 100%;
-      height: 100%; }
-      .join .content_sub .inner .wrap form {
-        width: 50%;
-        float: left;
-        padding: 100px 0; }
-        .join .content_sub .inner .wrap form fieldset {
-          border: none; }
-          .join .content_sub .inner .wrap form fieldset h1 {
-            margin-bottom: 20px; }
-            .join .content_sub .inner .wrap form fieldset h1 label {
-              font: 25px/1 'Gilda Display';
-              color: #A52F1D; }
-          .join .content_sub .inner .wrap form fieldset textarea {
-            width: 100%;
-            background: #E7DDD4;
-            resize: none;
-            padding: 20px;
-            color: #555;
-            font: 12px/1.2 'Lato'; }
-          .join .content_sub .inner .wrap form fieldset .agreement {
-            margin-bottom: 30px; }
-            .join .content_sub .inner .wrap form fieldset .agreement label {
-              font: 15px/1.2 'Lato';
-              color: #222; }
-          .join .content_sub .inner .wrap form fieldset table {
-            width: 100%; }
-            .join .content_sub .inner .wrap form fieldset table.t_id, .join .content_sub .inner .wrap form fieldset table.t_name {
-              width: 50%;
-              float: left; }
-            .join .content_sub .inner .wrap form fieldset table th {
-              display: flex;
-              justify-content: left; }
-              .join .content_sub .inner .wrap form fieldset table th label {
-                font: 18px/1 'Gilda Display';
-                color: #A52F1D;
-                position: relative;
-                left: 0; }
-            .join .content_sub .inner .wrap form fieldset table input {
-              height: 30px;
-              width: 100%;
-              background: #E7DDD4;
-              outline: none;
-              border: 1px solid #555;
-              margin-bottom: 20px; }
-              .join .content_sub .inner .wrap form fieldset table input[type=password] {
-                width: 49.5%;
-                float: left;
-                margin-right: 1%; }
-                .join .content_sub .inner .wrap form fieldset table input[type=password]:nth-child(2) {
-                  margin-right: 0; }
-              .join .content_sub .inner .wrap form fieldset table input[name=birthday] {
-                width: 33%;
-                float: left;
-                margin-right: 0.5%; }
-                .join .content_sub .inner .wrap form fieldset table input[name=birthday]:nth-child(3) {
-                  margin-right: 0; }
-      .join .content_sub .inner .wrap .pic {
-        width: 50%;
-        height: 1040px;
-        float: right;
-        padding-left: 100px;
-        display: flex;
-        align-items: center; }
-        .join .content_sub .inner .wrap .pic .img {
-          width: 100%;
-          height: 600px;
-          background: url(../img/error.jpeg) no-repeat center/cover;
-          border-radius: 50% 50% 0 0 / 50% 50% 0 0; }
 
 #header {
   width: 100%;
@@ -860,11 +772,11 @@ aside {
           #figure .inner .popup .inner .content a {
             color: #111; }
   #figure .swiper svg {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     fill: transparent;
-    stroke: #A52F1D;
+    stroke: #000;
     stroke-width: 20;
     stroke-dasharray: 4694;
     stroke-dashoffset: 4694;
@@ -1439,4 +1351,4 @@ aside {
     flex-direction: initial;
     flex-direction: row; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sytle.css.map */

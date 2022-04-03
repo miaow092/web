@@ -90,7 +90,7 @@
                         width: 100%;
                         height: 600px;
                         background: url(../img/error.jpeg) no-repeat center/cover;
-                        border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+                        clip-path: inset(1px 30px 1px 30px round 40%);
                     }           
                 }
             }

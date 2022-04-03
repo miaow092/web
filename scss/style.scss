@@ -9,7 +9,6 @@
 @import 'community.scss';
 @import 'youtube.scss';
 @import 'gallery.scss';
-@import 'location.scss';
 @import 'join.scss';
 
 
@@ -195,7 +194,7 @@
                     overflow: hidden;
                     span{
                         transform: translateX(30px);
-                        font: bolder 20px/50px 'arial';
+                        font: bolder 20px/50px 'Lato';
                         display: inline-block;
                         text-align: center;
                         padding: 0 30px;
@@ -204,7 +203,7 @@
                 }
                 .text{
                     text-align: center;
-                    font:bolder 80px/1 'arial';
+                    font:bolder 80px/1 'Lato';
                     padding: 20px 0;
                 }
                 .content{

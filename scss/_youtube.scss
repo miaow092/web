@@ -1,89 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
-
-.youtube{
-    width: 100%;
-    background: #E7DDD4;
-    .content_sub{
-        .inner{
-            width: 1180px;
-            margin: 0 auto;
-            padding: 50px 0;
-            main{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                
-                article{
-                    width: 100%;
-                    border-bottom: 3px solid #A52F1D;
-                    padding: 20px 0;
-                    &:nth-child(1){
-                        border-top: 3px solid #A52F1D;
-                    }
-                    .con{
-                        display: flex;
-                        .number{
-                            width: 15%; height: 100%;
-                            font: 80px/1 'Londrina Outline';
-                            display: inline-block;
-                            display: flex;
-                            align-self: center;
-                        }
-                        .pic{
-                            width: 42.5%; height: 100%;
-                            
-                            img{
-                                width: 100%; height: 100%;
-                                object-fit: cover;
-                                filter: grayscale(1);
-                            }
-                        }
-                        h2{
-                            width: 42.5%; height: 100%;
-                            font: bold 30px/1.2 'Gilda Display';
-                            padding:0 80px 0 50px;
-                            color: #111;
-                            display: flex;
-                            align-self: center;
-                        }
-                    }
-                    &:hover{
-                        .con{
-                            h2, .number{
-                                color:#A52F1D;
-                            }
-                            .pic img{
-                            filter: grayscale(0);
-                            }
-                        }
-                    }
-                        
-                }
-            }
-        }
-    }
+.youtube {
+	width: 100vw;
+	background: #e7ddd4;
+	.content_sub_vid {
+		width: 100%;
+		main {
+			display: flex;
+			align-items: stretch;
+			padding: 100px 30px;
+			article {
+				position: relative;
+				width: 25%;
+				border-right: 1px solid #555;
+				&:nth-child(4) {
+					border-right: 0;
+				}
+				.vid {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					left: 0;
+					opacity: 0;
+					padding: 0 10px;
+					transition: 1s;
+					a {
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							position: relative;
+						}
+						span {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -50%);
+							i {
+								font-size: 40px;
+								color: #a52f1d;
+							}
+						}
+					}
+				}
+				.inner {
+					transition: 0.5s;
+					padding: 30px 0;
+					.number {
+						display: block;
+						font: 400px/0.8 'Gilda Display';
+						color: #555;
+						text-align: center;
+						transition: 0.3s;
+					}
+					h1 {
+						display: 100%;
+						font: 30px/1 'Gilda Display';
+						color: #555;
+						text-align: center;
+						margin-bottom: 30px;
+					}
+					p {
+						text-align: center;
+						padding: 0 20px;
+						font: 15px/1 'Lato';
+						margin-bottom: 50px;
+						color: #555;
+					}
+				}
+				&:hover {
+					.vid {
+						opacity: 1;
+					}
+					.inner {
+						transform: translateY(-130px);
+						.number {
+							color: #a52f1d;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-aside{
-    width: 100%; height: 100vh;
-    position: fixed;
-    top:0; left: 0;
-    background: rgba(0,0,0,0.9);
-    padding: 5vw;
-    z-index: 2;
+aside {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 5vw;
+	z-index: 2;
 
-    .btnClose{
-        position: absolute;
-        display: inline-block;
-        border: 1px solid #A52F1D;
-        border-radius: 15px;
-        padding:10px 20px;
-        top: 2vh; right: 5vw;
-        color: #fff;
-        background:#A52F1D;
-        cursor: pointer;
-    }
+	.btnClose {
+		position: absolute;
+		display: inline-block;
+		border: 1px solid #a52f1d;
+		border-radius: 15px;
+		padding: 10px 20px;
+		top: 2vh;
+		right: 5vw;
+		color: #fff;
+		background: #a52f1d;
+		cursor: pointer;
+	}
 }
-
-

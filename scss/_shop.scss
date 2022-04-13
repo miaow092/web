@@ -1,0 +1,33 @@
+.shop{
+    .content_sub_shop{
+        background: #E7DDD4;
+        padding: 100px 0;
+        .inner{
+            width: 1180px;
+            margin: 0 auto;
+            ul{
+                &::after{
+                    display: block; clear: both; content:'';
+                }
+                li{
+                    float: left;
+                    padding: 0 30px;
+                }
+            }
+            section{
+                width: 100%;
+                &::after{
+                    display: block; content:''; clear: both;
+                }
+                article{
+                    float: left;
+                    width: 20%;
+                    padding: 10px;
+                    img{
+                        width: 100%; height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

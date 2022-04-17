@@ -238,14 +238,14 @@ a {
 
 .about .content_sub_category {
   width: 100%;
-  background: #E7DDD4;
+  background: #e7ddd4;
   padding: 100px 0; }
   .about .content_sub_category .inner {
     width: 1180px;
     margin: 0 auto; }
     .about .content_sub_category .inner .text h1 {
       font: 30px/1 'Gilda Display';
-      color: #A52F1D;
+      color: #a52f1d;
       margin-bottom: 10px;
       text-align: center; }
     .about .content_sub_category .inner .text p {
@@ -261,7 +261,7 @@ a {
       border-radius: 50%;
       margin-right: 20px;
       font: 30px/1 'Lato';
-      color: #E7DDD4;
+      color: #e7ddd4;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -287,7 +287,7 @@ a {
           opacity: 1; }
 .about .content_sub_organization {
   width: 100%;
-  background: #F3E9E0;
+  background: #f3e9e0;
   padding: 100px 0; }
   .about .content_sub_organization .inner {
     width: 1180px;
@@ -312,7 +312,7 @@ a {
         margin-right: 0; }
         .about .content_sub_organization .inner .wrap .member:nth-child(3) h1 {
           font: 60px/1 'Gilda Display';
-          color: #A52F1D;
+          color: #a52f1d;
           margin-bottom: 20px;
           text-align: center; }
         .about .content_sub_organization .inner .wrap .member:nth-child(3) > p {
@@ -346,7 +346,7 @@ a {
           .about .content_sub_organization .inner .wrap .member .text .sns a {
             cursor: pointer; }
             .about .content_sub_organization .inner .wrap .member .text .sns a i {
-              color: #A52F1D;
+              color: #a52f1d;
               font-size: 40px; }
         .about .content_sub_organization .inner .wrap .member .text h2 {
           font: 30px/1 'Gilda Display';
@@ -367,69 +367,101 @@ a {
         transform: translateY(-100%);
         opacity: 1; }
       .about .content_sub_organization .inner .wrap .member:hover .text h2 {
-        color: #A52F1D; }
+        color: #a52f1d; }
       .about .content_sub_organization .inner .wrap .member:hover .text p {
         display: block; }
 .about .content_sub_location {
   width: 100%;
-  background: #E7DDD4;
-  position: relative; }
+  background: #e7ddd4;
+  position: relative;
+  padding-top: 100px; }
   .about .content_sub_location .inner {
     width: 1180px;
     margin: 0 auto; }
-    .about .content_sub_location .inner .text {
-      padding: 50px 0;
-      float: left;
-      width: 45%;
-      height: 500px; }
-      .about .content_sub_location .inner .text h1 {
-        font: 30px/1 'Gilda Display';
-        color: #A52F1D;
-        margin-bottom: 30px; }
-      .about .content_sub_location .inner .text p {
-        font: 15px/1 'Lato';
-        color: #999;
-        margin-bottom: 20px; }
-      .about .content_sub_location .inner .text span {
-        font: bold 18px/1 'Lato';
-        color: #888;
-        display: block;
-        margin-bottom: 50px; }
-      .about .content_sub_location .inner .text ul {
-        width: 400px; }
-        .about .content_sub_location .inner .text ul li {
+    .about .content_sub_location .inner h1 {
+      font: 30px/1 'Gilda Display';
+      color: #a52f1d;
+      margin-bottom: 10px; }
+    .about .content_sub_location .inner p {
+      font: 15px/1.3 'Lato';
+      color: #555;
+      margin-bottom: 20px; }
+    .about .content_sub_location .inner .wrap {
+      width: 100%;
+      margin-bottom: 50px; }
+      .about .content_sub_location .inner .wrap .email {
+        width: 55%;
+        float: left; }
+        .about .content_sub_location .inner .wrap .email input,
+        .about .content_sub_location .inner .wrap .email textarea {
           float: left;
-          width: 200px;
-          height: 100px; }
-          .about .content_sub_location .inner .text ul li a {
-            display: block;
-            text-align: center;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            border-right: 1px solid #999;
-            font: 15px/30px 'Lato';
-            cursor: pointer;
-            color: #000;
-            transition: 0.3s; }
-            .about .content_sub_location .inner .text ul li a i {
-              font-size: 30px;
-              color: #999;
-              margin-right: 20px;
-              transition: 0.3s; }
-          .about .content_sub_location .inner .text ul li:nth-child(2) a, .about .content_sub_location .inner .text ul li:nth-child(4) a {
-            border-right: 0; }
-          .about .content_sub_location .inner .text ul li:hover a {
-            color: #A52F1D; }
-            .about .content_sub_location .inner .text ul li:hover a i {
-              transform: scale(1.5);
-              color: #A52F1D; }
-    .about .content_sub_location .inner #map {
-      position: absolute;
-      left: 45%;
-      float: left;
-      width: 55%;
-      height: 500px; }
+          width: 100%;
+          height: 40px;
+          background: #e7ddd4;
+          margin-bottom: 10px;
+          border: 1px solid #555;
+          padding-left: 10px;
+          outline: none; }
+          .about .content_sub_location .inner .wrap .email input[type='button'],
+          .about .content_sub_location .inner .wrap .email textarea[type='button'] {
+            width: 30%;
+            float: right;
+            background: #a52f1d;
+            color: #fff;
+            border: none; }
+        .about .content_sub_location .inner .wrap .email textarea {
+          height: 100px;
+          padding-top: 10px;
+          resize: none; }
+      .about .content_sub_location .inner .wrap .text {
+        width: 45%;
+        float: left;
+        padding-left: 50px; }
+        .about .content_sub_location .inner .wrap .text ul li h2 {
+          font: 20px/1 'Gilda Display';
+          color: #a52f1d;
+          margin-bottom: 10px; }
+          .about .content_sub_location .inner .wrap .text ul li h2 a {
+            display: inline-flex;
+            width: 30px;
+            color: #a52f1d; }
+        .about .content_sub_location .inner .wrap .text ul li p {
+          font: 15px/1.3 'Lato';
+          color: #555;
+          padding-left: 30px; }
+  .about .content_sub_location .branch {
+    width: 100%;
+    border-top: 1px solid #a52f1d;
+    border-bottom: 1px solid #a52f1d; }
+    .about .content_sub_location .branch::after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .about .content_sub_location .branch .inner {
+      width: 1180px;
+      margin: 0 auto; }
+      .about .content_sub_location .branch .inner li {
+        float: left;
+        width: 33.3%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #a52f1d;
+        transition: 0.3s; }
+        .about .content_sub_location .branch .inner li:nth-child(3) {
+          border-right: 1px solid #a52f1d; }
+        .about .content_sub_location .branch .inner li a {
+          color: #555;
+          font: 20px/1 'Gilda Display'; }
+        .about .content_sub_location .branch .inner li.on {
+          background: #a52f1d; }
+          .about .content_sub_location .branch .inner li.on a {
+            color: #fff; }
+  .about .content_sub_location #map {
+    width: 100%;
+    height: 500px;
+    filter: grayscale(0.7); }
 
 .community .content_sub_cs {
   background: #E7DDD4; }
@@ -554,67 +586,48 @@ a {
               z-index: 2; }
 
 .youtube {
-  width: 100vw;
+  width: 100%;
   background: #e7ddd4; }
-  .youtube .content_sub_vid {
-    width: 100%; }
-    .youtube .content_sub_vid main {
+  .youtube .content_sub_vid .inner {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 100px 0; }
+    .youtube .content_sub_vid .inner h1 {
+      font: 30px/1 'Gilda Display';
+      color: #a52f1d;
+      margin-bottom: 50px; }
+    .youtube .content_sub_vid .inner article {
       display: flex;
-      align-items: stretch;
-      padding: 100px 30px; }
-      .youtube .content_sub_vid main article {
-        position: relative;
-        width: 25%;
-        border-right: 1px solid #555; }
-        .youtube .content_sub_vid main article:nth-child(4) {
-          border-right: 0; }
-        .youtube .content_sub_vid main article .vid {
+      border-top: 1px solid #555;
+      margin-bottom: 40px; }
+      .youtube .content_sub_vid .inner article .vid {
+        position: relative; }
+        .youtube .content_sub_vid .inner article .vid .pic span {
+          width: 140px;
+          height: 150px;
           position: absolute;
-          bottom: 0;
-          width: 100%;
-          left: 0;
-          opacity: 0;
-          padding: 0 10px;
-          transition: 1s; }
-          .youtube .content_sub_vid main article .vid a img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: relative; }
-          .youtube .content_sub_vid main article .vid a span {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%); }
-            .youtube .content_sub_vid main article .vid a span i {
-              font-size: 40px;
-              color: #a52f1d; }
-        .youtube .content_sub_vid main article .inner {
-          transition: 0.5s;
-          padding: 30px 0; }
-          .youtube .content_sub_vid main article .inner .number {
-            display: block;
-            font: 400px/0.8 'Gilda Display';
-            color: #555;
-            text-align: center;
-            transition: 0.3s; }
-          .youtube .content_sub_vid main article .inner h1 {
-            display: 100%;
-            font: 30px/1 'Gilda Display';
-            color: #555;
-            text-align: center;
-            margin-bottom: 30px; }
-          .youtube .content_sub_vid main article .inner p {
-            text-align: center;
-            padding: 0 20px;
-            font: 15px/1 'Lato';
-            margin-bottom: 50px;
-            color: #555; }
-        .youtube .content_sub_vid main article:hover .vid {
-          opacity: 1; }
-        .youtube .content_sub_vid main article:hover .inner {
-          transform: translateY(-130px); }
-          .youtube .content_sub_vid main article:hover .inner .number {
+          bottom: 3.5px;
+          right: -100px;
+          color: #333;
+          background: #e7ddd4;
+          box-shadow: 3px 0px 3px #999; }
+      .youtube .content_sub_vid .inner article .text {
+        padding-left: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .youtube .content_sub_vid .inner article .text h2 {
+          font: 25px/1 'Gilda Display';
+          color: #a52f1d;
+          margin-bottom: 10px; }
+        .youtube .content_sub_vid .inner article .text p {
+          font: 15px/1.3 'Gilda Display';
+          color: #555;
+          margin-bottom: 20px; }
+        .youtube .content_sub_vid .inner article .text .view {
+          display: inline;
+          color: #333; }
+          .youtube .content_sub_vid .inner article .text .view:hover {
             color: #a52f1d; }
 
 aside {
@@ -640,41 +653,42 @@ aside {
 
 .gallery .content_sub {
   width: 100%;
-  background: #E7DDD4; }
+  background: #e7ddd4; }
   .gallery .content_sub .inner {
     width: 1180px;
     margin: 0 auto;
     padding: 50px 0; }
     .gallery .content_sub .inner main {
-      width: 100%; }
+      width: 100%;
+      min-height: 600px; }
       .gallery .content_sub .inner main #searchBox {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 30px 5px; }
         .gallery .content_sub .inner main #searchBox input {
           height: 30px;
-          width: 100%;
+          width: 30%;
           border: none;
-          background: #E7DDD4;
-          border-bottom: 1px solid #A52F1D;
+          background: #e7ddd4;
+          border-bottom: 1px solid #a52f1d;
+          margin-right: 20px;
           outline: none; }
         .gallery .content_sub .inner main #searchBox .btnSearch {
-          background: #E7DDD4;
-          border: none;
+          background: #e7ddd4;
           width: 100px;
-          margin-left: 30px;
-          font-size: 20px; }
-          .gallery .content_sub .inner main #searchBox .btnSearch:hover {
-            border-radius: 50px;
-            border: 1px solid #A52F1D; }
+          font-size: 20px;
+          font: 20px/1 'Gilda Display';
+          border: 1px solid #a52f1d;
+          background: #a52f1d;
+          color: #fff; }
       .gallery .content_sub .inner main .loading {
         width: 300px;
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        transition: .5s; }
+        transform: translateX(-50%);
+        transition: 0.5s; }
         .gallery .content_sub .inner main .loading.off {
           opacity: 0; }
       .gallery .content_sub .inner main section {
@@ -696,26 +710,26 @@ aside {
           float: left;
           padding: 5px; }
           .gallery .content_sub .inner main section .item > div {
-            background: #F9F9F9;
+            background: #f9f9f9;
             width: 100%;
             padding: 10px;
-            transition: .3s; }
+            transition: 0.3s; }
             .gallery .content_sub .inner main section .item > div .pic {
               display: block;
               width: 100%;
               padding: 10px;
-              border: 1px solid #F3E9E0; }
+              border: 1px solid #f3e9e0; }
               .gallery .content_sub .inner main section .item > div .pic img {
                 width: 100%;
                 filter: grayscale(1);
-                transition: .3s; }
+                transition: 0.3s; }
               .gallery .content_sub .inner main section .item > div .pic p {
                 font: 12px/1.2 'Lato';
-                color: #A52F1D;
+                color: #a52f1d;
                 margin: 2px 0;
-                transition: .3s; }
+                transition: 0.3s; }
           .gallery .content_sub .inner main section .item:hover > div {
-            background: #A52F1D; }
+            background: #a52f1d; }
             .gallery .content_sub .inner main section .item:hover > div .pic img {
               filter: grayscale(0); }
             .gallery .content_sub .inner main section .item:hover > div .pic p {
@@ -743,31 +757,30 @@ aside {
     position: absolute;
     top: 40px;
     right: 40px;
-    color: #A52F1D;
+    color: #a52f1d;
     cursor: pointer; }
 
 .join .content_sub {
-  background: #E7DDD4; }
+  background: #e7ddd4; }
   .join .content_sub .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 100px 0; }
     .join .content_sub .inner .wrap {
-      width: 100%;
-      height: 100%; }
+      width: 100%; }
       .join .content_sub .inner .wrap form {
         width: 50%;
-        float: left;
-        padding: 100px 0; }
+        float: left; }
         .join .content_sub .inner .wrap form fieldset {
           border: none; }
           .join .content_sub .inner .wrap form fieldset h1 {
             margin-bottom: 20px; }
             .join .content_sub .inner .wrap form fieldset h1 label {
               font: 25px/1 'Gilda Display';
-              color: #A52F1D; }
+              color: #a52f1d; }
           .join .content_sub .inner .wrap form fieldset textarea {
             width: 100%;
-            background: #E7DDD4;
+            background: #e7ddd4;
             resize: none;
             padding: 20px;
             color: #555;
@@ -779,7 +792,7 @@ aside {
               color: #222; }
           .join .content_sub .inner .wrap form fieldset table {
             width: 100%; }
-            .join .content_sub .inner .wrap form fieldset table.t_id, .join .content_sub .inner .wrap form fieldset table.t_name {
+            .join .content_sub .inner .wrap form fieldset table.t_id, .join .content_sub .inner .wrap form fieldset table.t_name, .join .content_sub .inner .wrap form fieldset table.t_password, .join .content_sub .inner .wrap form fieldset table.t_repassword {
               width: 50%;
               float: left; }
             .join .content_sub .inner .wrap form fieldset table th {
@@ -787,37 +800,46 @@ aside {
               justify-content: left; }
               .join .content_sub .inner .wrap form fieldset table th label {
                 font: 18px/1 'Gilda Display';
-                color: #A52F1D;
+                color: #a52f1d;
                 position: relative;
                 left: 0; }
             .join .content_sub .inner .wrap form fieldset table input {
               height: 30px;
               width: 100%;
-              background: #E7DDD4;
+              background: #e7ddd4;
               outline: none;
               border: 1px solid #555;
-              margin-bottom: 20px; }
-              .join .content_sub .inner .wrap form fieldset table input[type=password] {
-                width: 49.5%;
-                float: left;
-                margin-right: 1%; }
-                .join .content_sub .inner .wrap form fieldset table input[type=password]:nth-child(2) {
-                  margin-right: 0; }
-              .join .content_sub .inner .wrap form fieldset table input[name=birthday] {
+              margin-bottom: 20px;
+              padding-left: 5px; }
+              .join .content_sub .inner .wrap form fieldset table input[name='birthday'] {
                 width: 33%;
                 float: left;
                 margin-right: 0.5%; }
-                .join .content_sub .inner .wrap form fieldset table input[name=birthday]:nth-child(3) {
+                .join .content_sub .inner .wrap form fieldset table input[name='birthday']:nth-child(3) {
                   margin-right: 0; }
+            .join .content_sub .inner .wrap form fieldset table p {
+              color: rgba(165, 47, 29, 0.6);
+              font: 13px/1 'Lato';
+              margin-top: -10px;
+              margin-bottom: 10px; }
+          .join .content_sub .inner .wrap form fieldset input[type='submit'],
+          .join .content_sub .inner .wrap form fieldset input[type='reset'] {
+            background-color: #a52f1d;
+            border: none;
+            padding: 5px 50px;
+            color: #fff;
+            font: 18px/1 'Gilda Display';
+            transition: 0.3s;
+            float: right;
+            margin-left: 10px; }
       .join .content_sub .inner .wrap .pic {
         width: 50%;
-        height: 1040px;
-        float: right;
-        padding-left: 100px;
+        height: 100%;
+        float: left;
         display: flex;
-        align-items: center; }
+        justify-content: center; }
         .join .content_sub .inner .wrap .pic .img {
-          width: 100%;
+          width: 80%;
           height: 600px;
           background: url(../img/error.jpeg) no-repeat center/cover;
           clip-path: inset(1px 30px 1px 30px round 40%); }
@@ -849,10 +871,27 @@ aside {
           width: 100%;
           height: 100%; }
 
+.popUp {
+  display: none; }
+  .popUp .inner {
+    position: absolute;
+    z-index: 3;
+    width: 700px;
+    height: 500px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .popUp .inner .wrap {
+      width: 100%; }
+      .popUp .inner .wrap .pic {
+        width: 50%;
+        background: url(../img/error.jpeg) no-repeat center/cover; }
+
 #header {
   width: 100%;
   height: 80px;
-  background: #F3E9E0;
+  background: #f3e9e0;
   position: relative; }
   #header .inner {
     width: 1180px;
@@ -864,7 +903,7 @@ aside {
       transform: translate(-50%, -50%); }
       #header .inner > h1 a {
         font: bold 20px/1 'Gilda Display';
-        color: #A52F1D; }
+        color: #a52f1d; }
     #header .inner .menuWeb {
       float: left; }
       #header .inner .menuWeb li {
@@ -893,22 +932,22 @@ aside {
       z-index: 15;
       cursor: pointer; }
       #header .inner .btnCall::before {
-        content: "";
+        content: '';
         display: block;
         width: 100%;
         height: 2px;
-        background: #A52F1D;
+        background: #a52f1d;
         position: absolute;
         top: 0;
         left: 0;
         transition: top 0.5s 0s, transform 0.5s 0.5s;
         border-radius: 50%; }
       #header .inner .btnCall::after {
-        content: "";
+        content: '';
         display: block;
         width: 100%;
         height: 2px;
-        background: #A52F1D;
+        background: #a52f1d;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -918,7 +957,7 @@ aside {
         display: block;
         width: 100%;
         height: 2px;
-        background: #A52F1D;
+        background: #a52f1d;
         position: absolute;
         top: 50%;
         margin-top: -1px;
@@ -927,25 +966,25 @@ aside {
         text-indent: -9999px;
         border-radius: 50%; }
       #header .inner .btnCall.on::before {
-        background: #F3E9E0;
+        background: #f3e9e0;
         top: 50%;
         margin-top: -1px;
         transform: rotate(45deg); }
       #header .inner .btnCall.on::after {
-        background: #F3E9E0;
+        background: #f3e9e0;
         bottom: 50%;
         margin-bottom: -1px;
         transform: rotate(-45deg); }
       #header .inner .btnCall.on span {
-        background: #F3E9E0;
+        background: #f3e9e0;
         transform: translateX(100%);
         opacity: 0; }
     #header .inner .menuMo {
       position: fixed;
       width: 250px;
       height: 100vh;
-      background: #A52F1D;
-      right: -250PX;
+      background: #a52f1d;
+      right: -250px;
       top: 0;
       z-index: 10;
       opacity: 0.7;
@@ -963,164 +1002,108 @@ aside {
   width: 100%;
   height: calc(100vh - 80px);
   overflow: hidden;
-  background-color: #F3E9E0;
-  padding-top: 50px;
+  background-color: #f3e9e0;
   position: relative; }
-  #figure .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative; }
-    #figure .inner .popup {
-      display: none;
-      width: 400px;
-      position: absolute;
-      top: -50px;
-      left: 0px;
-      z-index: 3; }
-      #figure .inner .popup .top {
-        width: 0%;
-        height: 1px;
-        background: #111;
-        position: absolute;
-        top: 0;
-        left: 0; }
-      #figure .inner .popup .rigth {
-        height: 0%;
-        width: 1px;
-        background: #111;
-        position: absolute;
-        top: 0;
-        right: 0; }
-      #figure .inner .popup .bottom {
-        width: 0%;
-        height: 1px;
-        background: #111;
-        position: absolute;
-        bottom: 0;
-        right: 0; }
-      #figure .inner .popup .left {
-        height: 0%;
-        width: 1px;
-        background: #111;
-        position: absolute;
-        top: 0;
-        left: 0; }
-      #figure .inner .popup .inner {
-        width: 100%;
-        background: #E7DDD4;
-        padding: 50px 30px 30px 30px; }
-        #figure .inner .popup .inner .line {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 400px;
-          height: 50px;
-          background: #A52F1D;
-          color: #F3E9E0;
-          white-space: nowrap;
-          overflow: hidden; }
-          #figure .inner .popup .inner .line span {
-            transform: translateX(30px);
-            font: bolder 20px/50px 'Lato';
-            display: inline-block;
-            text-align: center;
-            padding: 0 30px;
-            animation: line 5s linear infinite alternate; }
-        #figure .inner .popup .inner .text {
-          text-align: center;
-          font: bolder 80px/1 'Lato';
-          padding: 20px 0; }
-        #figure .inner .popup .inner .content {
-          display: flex;
-          justify-content: space-between; }
-          #figure .inner .popup .inner .content a {
-            color: #111; }
-  #figure .swiper svg {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    fill: transparent;
-    stroke: #A52F1D;
-    stroke-width: 20;
-    stroke-dasharray: 4694;
-    stroke-dashoffset: 4694;
-    animation: stroke 3s ease 0s both; }
-    #figure .swiper svg:nth-child(1) {
-      top: 0;
-      left: 10%; }
-    #figure .swiper svg:nth-child(2) {
-      top: 10%;
-      right: 20%; }
-    #figure .swiper svg:nth-child(3) {
-      bottom: 0;
-      left: 20%; }
-    #figure .swiper svg:nth-child(4) {
-      bottom: 50%;
-      left: 20%; }
-    #figure .swiper svg:nth-child(5) {
-      bottom: 10%;
-      right: 10%; }
-  #figure .swiper .swiper-wrapper {
+  #figure .swiper {
     width: 100%;
-    height: 100%; }
-    #figure .swiper .swiper-wrapper .swiper-slide {
-      width: 480px;
-      height: 580px;
-      position: relative; }
-      #figure .swiper .swiper-wrapper .swiper-slide img {
-        clip-path: inset(1px 30px 1px 30px round 40%);
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      #figure .swiper .swiper-wrapper .swiper-slide .tex {
-        position: absolute;
-        bottom: 50px;
-        left: -80px; }
-        #figure .swiper .swiper-wrapper .swiper-slide .tex h1 {
-          opacity: 0;
-          font: 35px/1 'Gilda Display';
-          margin-bottom: 15px;
-          color: #A52F1D;
+    position: absolute;
+    bottom: 0; }
+    #figure .swiper .swiper-wrapper {
+      width: 100%; }
+      #figure .swiper .swiper-wrapper .swiper-slide {
+        width: 500px;
+        height: 700px;
+        position: relative; }
+        #figure .swiper .swiper-wrapper .swiper-slide > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          clip-path: inset(1px 10px 1px 10px round 45%);
           position: relative;
-          transform: translateY(-50px);
-          transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.39, 1.65) 0.5s; }
-        #figure .swiper .swiper-wrapper .swiper-slide .tex p {
+          z-index: 3; }
+        #figure .swiper .swiper-wrapper .swiper-slide .text {
+          position: absolute;
+          bottom: 83px;
+          left: -68%;
+          z-index: 5; }
+          #figure .swiper .swiper-wrapper .swiper-slide .text h1 {
+            font: 100px/1.3 'Gilda Display';
+            color: #333;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 1s ease 0.3s; }
+        #figure .swiper .swiper-wrapper .swiper-slide .back {
+          width: 1180px;
+          height: 250px;
+          position: absolute;
+          left: -68%;
+          bottom: 0;
+          background: url(../img/main_b1.jpeg) no-repeat center/cover;
+          z-index: 1;
           opacity: 0;
-          font: 15px/1.4 'Lato';
-          color: #555; }
-    #figure .swiper .swiper-wrapper .swiper-slide-active .tex h1 {
-      animation: ani 1s ease 0.5s;
-      animation-fill-mode: both;
-      transform: translateY(0); }
-    #figure .swiper .swiper-wrapper .swiper-slide-active .tex p {
-      opacity: 1; }
-  #figure .swiper .swiper-button-next {
-    position: absolute;
-    top: 53%;
-    right: 28%;
-    color: #999;
-    transform: scale(0.5);
-    transition: 0.5s; }
-    #figure .swiper .swiper-button-next:hover {
-      transform: scale(0.7);
-      color: #A52F1D; }
-  #figure .swiper .swiper-button-prev {
-    position: absolute;
-    color: #A52F1D;
-    top: 53%;
-    left: 28%;
-    color: #999;
-    transform: scale(0.5);
-    transition: 0.5s; }
-    #figure .swiper .swiper-button-prev:hover {
-      transform: scale(0.7);
-      color: #A52F1D; }
+          transform: translateY(250px); }
+          #figure .swiper .swiper-wrapper .swiper-slide .back > img {
+            width: 100%;
+            width: 100%;
+            object-fit: cover; }
+        #figure .swiper .swiper-wrapper .swiper-slide .des {
+          width: 250px;
+          position: absolute;
+          top: 100px;
+          right: -300px;
+          font: 15px/1.5 'Lato';
+          color: #555;
+          opacity: 0;
+          transform: translateX(250px); }
+          #figure .swiper .swiper-wrapper .swiper-slide .des a {
+            color: #666;
+            margin-top: 20px;
+            display: block;
+            text-decoration: underline; }
+      #figure .swiper .swiper-wrapper .swiper-slide-active .text h1 {
+        opacity: 1; }
+      #figure .swiper .swiper-wrapper .swiper-slide-active .back {
+        animation: background 1s ease 1s;
+        animation-fill-mode: forwards; }
+      #figure .swiper .swiper-wrapper .swiper-slide-active .des {
+        animation: rightMove 1s ease 1s;
+        animation-fill-mode: forwards; }
+    #figure .swiper .swiper-button-next {
+      position: absolute;
+      top: 53%;
+      right: 28%;
+      color: #999;
+      transform: scale(0.5);
+      transition: 0.5s; }
+      #figure .swiper .swiper-button-next:hover {
+        transform: scale(0.7);
+        color: #a52f1d; }
+    #figure .swiper .swiper-button-prev {
+      position: absolute;
+      color: #a52f1d;
+      top: 53%;
+      left: 28%;
+      color: #999;
+      transform: scale(0.5);
+      transition: 0.5s; }
+      #figure .swiper .swiper-button-prev:hover {
+        transform: scale(0.7);
+        color: #a52f1d; }
 
-@keyframes line {
+@keyframes background {
   0% {
-    transform: translateX(30px); }
+    transform: translateY(250px);
+    opacity: 0; }
   100% {
-    transform: translateX(-200px); } }
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes rightMove {
+  0% {
+    transform: translateX(250px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 @keyframes stroke {
   0% {
     stroke-dashoffset: 4694; }
@@ -1129,14 +1112,14 @@ aside {
 #favorite {
   width: 100%;
   padding: 100px 0;
-  background: #F3E9E0; }
+  background: #f3e9e0; }
   #favorite .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
     #favorite .inner h1 {
       font: 35px/1 'Gilda Display';
-      color: #A52F1D;
+      color: #a52f1d;
       margin-bottom: 50px; }
     #favorite .inner .wrap .favItem {
       float: left;
@@ -1151,7 +1134,7 @@ aside {
         margin-bottom: 15px; }
       #favorite .inner .wrap .favItem h2 {
         font: 18px/1 'Lato';
-        color: #A52F1D;
+        color: #a52f1d;
         margin-bottom: 10px; }
       #favorite .inner .wrap .favItem p {
         font: 15px/1 'Lato';
@@ -1162,7 +1145,7 @@ aside {
       right: 0;
       font: bold 15px/1 'Lato';
       display: inline-block;
-      border: 1px solid #A52F1D;
+      border: 1px solid #a52f1d;
       padding: 20px 50px;
       border-radius: 50%;
       color: #000; }
@@ -1174,18 +1157,18 @@ aside {
         position: absolute;
         top: 26px;
         right: 110px;
-        background: #A52F1D; }
+        background: #a52f1d; }
       #favorite .inner a::before {
         content: '〉';
         display: block;
         position: absolute;
         top: 19px;
         right: 109px;
-        color: #A52F1D; }
+        color: #a52f1d; }
 
 #collaboration {
   width: 100%;
-  background: #E7DDD4;
+  background: #e7ddd4;
   padding: 100px 0;
   position: relative; }
   #collaboration .inner {
@@ -1205,7 +1188,7 @@ aside {
         padding-top: 110px;
         font: 35px/1.3 'Gilda Display';
         font-weight: 300px;
-        color: #A52F1D;
+        color: #a52f1d;
         margin-bottom: 50px; }
       #collaboration .inner article p {
         font: 15px/1.4 'Lato';
@@ -1213,7 +1196,7 @@ aside {
         margin-bottom: 70px; }
       #collaboration .inner article a {
         font: bold 15px/1 'Lato';
-        border: 1px solid #A52F1D;
+        border: 1px solid #a52f1d;
         padding: 20px 50px;
         color: #000;
         border-radius: 50%;
@@ -1227,55 +1210,56 @@ aside {
           position: absolute;
           top: 28px;
           left: -45px;
-          background: #A52F1D; }
+          background: #a52f1d; }
         #collaboration .inner article a::before {
           content: '〉';
           display: block;
           position: absolute;
           top: 21px;
           left: 29.5px;
-          color: #A52F1D; }
+          color: #a52f1d; }
 
 #categories {
   width: 100%;
   padding: 100px 0;
-  background: #F3E9E0; }
+  background: #f3e9e0; }
   #categories .inner {
     width: 1180px;
     margin: 0 auto; }
     #categories .inner h1 {
       font: 35px/1 'Gilda Display';
       letter-spacing: -1px;
-      color: #A52F1D;
+      color: #a52f1d;
       margin-bottom: 50px; }
     #categories .inner .wrap article {
       float: left;
       margin: 0 20px 20px 0;
-      background: #F9F9F9;
+      background: #f9f9f9;
       width: 380px;
       height: 500px;
       padding: 30px;
-      transition: .3s; }
+      transition: 0.3s; }
       #categories .inner .wrap article > div {
         width: 100%;
         height: 100%;
         padding: 30px;
-        border: 1px solid #F3E9E0; }
+        border: 1px solid #f3e9e0; }
         #categories .inner .wrap article > div img {
           width: 100%;
           height: 90%;
           object-fit: over;
-          transition: .3s; }
+          transition: 0.3s; }
         #categories .inner .wrap article > div .text {
           width: 100%;
           height: 10%;
           display: flex;
           justify-content: space-between;
           align-items: flex-end; }
-          #categories .inner .wrap article > div .text h2, #categories .inner .wrap article > div .text a {
+          #categories .inner .wrap article > div .text h2,
+          #categories .inner .wrap article > div .text a {
             font: 15px/1 'Lato';
-            color: #A52F1D;
-            transition: .3s; }
+            color: #a52f1d;
+            transition: 0.3s; }
       #categories .inner .wrap article:nth-child(3), #categories .inner .wrap article:nth-child(5) {
         margin-right: 0; }
       #categories .inner .wrap article:nth-child(3) img {
@@ -1283,14 +1267,14 @@ aside {
       #categories .inner .wrap article:nth-child(4) {
         width: 780px; }
       #categories .inner .wrap article:hover {
-        background: #A52F1D; }
+        background: #a52f1d; }
       #categories .inner .wrap article:hover .text h2, #categories .inner .wrap article:hover .text a {
         color: #fff; }
 
 #about {
   width: 100%;
   padding: 100px 0;
-  background: #E7DDD4; }
+  background: #e7ddd4; }
   #about .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -1301,7 +1285,7 @@ aside {
       #about .inner .wrap article h1 {
         padding-top: 100px;
         font: 35px/1.3 'Gilda Display';
-        color: #A52F1D;
+        color: #a52f1d;
         margin-bottom: 50px; }
       #about .inner .wrap article p {
         font: 15px/1.4 'Lato';
@@ -1311,7 +1295,7 @@ aside {
         margin-bottom: 70px; }
       #about .inner .wrap article a {
         font: bold 15px/1 'Lato';
-        border: 1px solid #A52F1D;
+        border: 1px solid #a52f1d;
         padding: 20px 60px;
         color: #000;
         border-radius: 50%;
@@ -1325,14 +1309,14 @@ aside {
           position: absolute;
           top: 28px;
           left: -45px;
-          background: #A52F1D; }
+          background: #a52f1d; }
         #about .inner .wrap article a::before {
           content: '〉';
           display: block;
           position: absolute;
           top: 21.2px;
           left: 29.5px;
-          color: #A52F1D; }
+          color: #a52f1d; }
       #about .inner .wrap article img {
         float: right;
         width: 80%;
@@ -1342,7 +1326,7 @@ aside {
 
 #footer {
   width: 100%;
-  background: #F3E9E0;
+  background: #f3e9e0;
   padding: 50px 0; }
   #footer .inner {
     width: 1180px;
@@ -1404,13 +1388,13 @@ aside {
           color: #444; }
         #footer .inner .wrap form input {
           font: bold 16px/1 'Lato';
-          background: #F3E9E0;
+          background: #f3e9e0;
           border: none;
           border-bottom: 1px solid #aaa;
-          outline: #A52F1D;
+          outline: #a52f1d;
           padding-bottom: 3px;
           color: #444; }
-          #footer .inner .wrap form input[type=email] {
+          #footer .inner .wrap form input[type='email'] {
             margin-right: 15px; }
     #footer .inner > span {
       font: 16px/1 'Lato';
@@ -1419,13 +1403,6 @@ aside {
       color: #aaa;
       padding-top: 50px; }
 
-@keyframes ani {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    opacity: 1; } }
 @media screen and (max-width: 1179px) {
   #header .inner {
     width: 100%; }
@@ -1520,7 +1497,7 @@ aside {
     text-align: center; }
     #figure .swiper .swiper-wrapper .swiper-slide .tex p {
       display: inline;
-      background-color: #F3E9E0; }
+      background-color: #f3e9e0; }
   #figure .swiper .swiper-button-next {
     right: 5%; }
   #figure .swiper .swiper-button-prev {
@@ -1563,10 +1540,10 @@ aside {
       position: absolute;
       top: 53%;
       right: 28%;
-      color: #A52F1D; }
+      color: #a52f1d; }
     #figure .swiper .swiper-button-prev {
       position: absolute;
-      color: #A52F1D;
+      color: #a52f1d;
       top: 53%;
       left: 28%; }
 

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <!DOCTYPE html>
-    <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>join page</title>
-        <script src="https://kit.fontawesome.com/b6f619d630.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join page</title>
+    <script src="https://kit.fontawesome.com/b6f619d630.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/join.js"></script>
 </head>
+
 <body>
-    
+
     <!--header_sub-->
     <header id="header_sub">
         <div class="inner">
@@ -31,7 +32,7 @@
                     <li><a href="#"><i class="fas fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
-        
+
             <!---햄버거 버튼--->
             <a href="#" class="btnCall">
                 <span>메뉴호출</span>
@@ -60,8 +61,9 @@
         </div>
     </header>
 
-     <!---content--->
+    <!---content--->
     <section class="content join">
+
         <div class="sub_visual">
             <div class="inner">
                 <div class="img">
@@ -73,7 +75,7 @@
         <div class="content_sub">
             <div class="inner">
                 <div class="wrap">
-                    <form action="result.html">
+                    <form action="result.html" method="get" id="join">
                         <fieldset>
                             <legend class="h"> 회원 가입 양식</legend>
                             <h1><label for="terms">Check out the terms and conditions.</label></h1>
@@ -95,12 +97,13 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                                            <input type="text" name="name" id="name"
+                                                placeholder="Please enter your name">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
                             <table class="t_id">
                                 <caption class="h">아이디 입력 테이블</caption>
                                 <thead>
@@ -111,14 +114,14 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="id" id="id" placeholder="Please enter your ID" required>
+                                            <input type="text" name="id" id="id" placeholder="Please enter your ID">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
 
 
-                            <table>
+                            <table class="t_password">
                                 <caption class="h">비밀번호 입력 테이블</caption>
                                 <thead>
                                     <tr>
@@ -128,29 +131,47 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="password" name="password" id="password" placeholder="Please enter your password" required>
-                                            <input type="password" name="password" id="password" placeholder="Please re-enter your password" required>
+                                            <input type="password" name="password" id="password"
+                                                placeholder="Please enter your password">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            
-                            <table>
-                                <caption class="h">메일 입력 테이블</caption>
+
+                            <table class="t_repassword">
+                                <caption class="h">비밀번호 재입력 테이블</caption>
                                 <thead>
                                     <tr>
-                                        <th scope="col"><label for="email">E-MAIL</label></th>
+                                        <th scope="col"><label for="re  password">RE-PASSWORD</label></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="email" id="email" placeholder="Please enter your e-mail" required>
+                                            <input type="password" name="repassword" id="repassword"
+                                                placeholder="Please re-enter your password">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
+                            <table>
+                                <caption class="h">메일 입력 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><label for="text">E-MAIL</label></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="email" id="email"
+                                                placeholder="Please enter your e-mail">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                             <table>
                                 <caption class="h">휴대전화 입력 테이블</caption>
                                 <thead>
@@ -161,57 +182,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="ph" id="ph" placeholder="Please enter your phone number" required>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            
-                            <table>
-                                <caption class="h">주소 입력 테이블</caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col"><label for="adress">ADRESS</label></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="text" name="adress" id="adress" placeholder="Please enter your adress" required>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <table>
-                                <caption class="h">생년월일 입력 테이블</caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col"><label for="birthday" >DATE OF BIRTH</label></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="text" name="birthday" id="birthday" minlength="4" maxlength="4" placeholder="Year">
-                                            <input type="number" name="birthday" id="birthday" min="1" max="12" placeholder="month">
-                                            <input type="text" name="birthday" id="birthday" minlength="1" maxlength="2" placeholder="date">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <table>
-                                <caption class="h">코멘트 테이블</caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col"><label for="comments">COMMENTS</label></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="text" name="comments" id="comments" placeholder="Please enter your comments">
+                                            <input type="text" name="ph" id="ph"
+                                                placeholder="Please enter your phone number">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -219,7 +191,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 
                             <input type="reset" value="CANCEL">
                             <input type="submit" value="SUBMIT">
-                            
+
                         </fieldset>
                     </form>
 
@@ -276,4 +248,5 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     </footer>
 
 </body>
+
 </html>

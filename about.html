@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <title>about page</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/b6f619d630.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fa6e6500acfea274ce65f32161f06c35"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fa6e6500acfea274ce65f32161f06c35"></script>
 
     <script defer src="js/about.js"></script>
-    
+    <script defer src="js/location.js"></script>
+
 
 </head>
+
 <body>
-    
+
     <!--header_sub-->
     <header id="header_sub">
         <div class="inner">
@@ -34,7 +38,7 @@
                     <li><a href="#"><i class="fas fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
-        
+
             <!---햄버거 버튼--->
             <a href="#" class="btnCall">
                 <span>메뉴호출</span>
@@ -76,16 +80,24 @@
         <div class="content_sub_category">
             <div class="inner">
                 <div class="text">
-                <h1>About WILD FAWN</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Quaerat quos, amet iure maiores fugiat minus consectetur.<br>
-                    Lorem ipsum dolor sit amet.</p>
+                    <h1>About WILD FAWN</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Quaerat quos, amet iure maiores fugiat minus consectetur.<br>
+                        Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="wrap">
-                    <div class="img"><p>HAND MADE</p></div>
-                    <div class="img"><p>ECO<br>WILD FAWN</p></div>
-                    <div class="img"><p>INITIAL<br>SERVICE</p></div>
-                    <div class="img"><p>PREMIUM<br>SERVICE</p></div>
+                    <div class="img">
+                        <p>HAND MADE</p>
+                    </div>
+                    <div class="img">
+                        <p>ECO<br>WILD FAWN</p>
+                    </div>
+                    <div class="img">
+                        <p>INITIAL<br>SERVICE</p>
+                    </div>
+                    <div class="img">
+                        <p>PREMIUM<br>SERVICE</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,7 +139,9 @@
                     </div>
                     <div class="member">
                         <h1>MEET OUR<br> TEAM MEMBERS</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi quas iure repudiandae veritatis sed dolores accusamus expedita, quidem excepturi, necessitatibus, culpa voluptatum maxime explicabo neque dolorum sit alias perspiciatis?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi quas iure repudiandae
+                            veritatis sed dolores accusamus expedita, quidem excepturi, necessitatibus, culpa voluptatum
+                            maxime explicabo neque dolorum sit alias perspiciatis?</p>
                     </div>
                     <div class="member">
                         <div class="img">
@@ -199,24 +213,50 @@
 
         <div class="content_sub_location">
             <div class="inner">
+                <h1>Say Hello</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> In, quod corporis! Laudantium sequi
+                    tempore
+                    dolore.</p>
                 <div class="wrap">
-                    <div class="text">
-                        <h1>Contact us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>123-1234-1234</span>
-
-                        <ul class="branch">
-                            <li class="on"><a href="#"><i class="fa-solid fa-location-dot"></i>head office</a></li>
-                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>branch office1</a></li>
-                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>branch office2</a></li>
-                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>branch office3</a></li>
-                    
-                        </ul>
-                        
+                    <div class="email">
+                        <form>
+                            <input type="text" name="sender" id="sender" placeholder="sender">
+                            <input type="text" name="recipient" id="recipient" placeholder="recipient">
+                            <textarea name="comments" id="comments" placeholder="comments" cols="30"
+                                rows="10"></textarea>
+                            <input type="button" value="SEND MESSAGE">
+                        </form>
                     </div>
-                    <div id="map"></div>
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <h2><a href="#"><i class="fa-solid fa-location-dot"></i></a>Address</h2>
+                                <p>Lorem ipsum sit amet consectetur adipisicing.<br />
+                                    Repellendus repellat.</p>
+                            </li>
+                            <li>
+                                <h2><a href="#"><i class="fa-solid fa-phone"></i></a>Phone</h2>
+                                <p>Lorem dolor sit consectetur adipisicing elit.<br />
+                                    Repellendus repellat.</p>
+                            </li>
+                            <li>
+                                <h2><a href="#"><i class="fa-solid fa-envelope"></i></a>Email Us</h2>
+                                <p>ipsum dolor sit amet adipisicing elit.<br />
+                                    Repellendus repellat.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <ul class="branch">
+                <div class="inner">
+                    <li class="on" data-index="0"><a href="#">The Ilsan Branch</a></li>
+                    <li data-index="1"><a href="#">The Bucheon Branch</a></li>
+                    <li data-index="2"><a href="#">The COEX Mall Branch</a></li>
+                </div>
+            </ul>
+            <div id="map"></div>
         </div>
 
     </section>
@@ -265,4 +305,5 @@
     </footer>
 
 </body>
+
 </html>

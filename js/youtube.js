@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const main = document.querySelector('.youtube .content_sub_vid main');
 const key = 'AIzaSyC6QtD-1n1UHsw8dD64nAkoS8BVKV5AV5M';
 const playListId = 'PL-Cr7h7IRk-tDu8QdvcVP3-P-deQflV9v';
-const num = 4;
+const num = 6;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxesRults=${num}`;
 
 fetch(url)
@@ -15,24 +15,23 @@ fetch(url)
 
 		items.forEach((item, index) => {
 			let desc = item.snippet.description;
-			if (desc.length > 100) desc = desc.substr(0, 100) + '...';
+			if (desc.length > 200) desc = desc.substr(0, 200) + '...';
 
+			console.log(item.snippet);
 			result += `
             <article>
                 <div class="vid">
-                    <a class="pic" href="#" data-vid="${
-											item.snippet.resourceId.videoId
-										}">
+                    <a class="pic" href="#" data-vid="${item.snippet.resourceId.videoId}">
                         <img src="${item.snippet.thumbnails.medium.url}">
-                        <span><i class="fa-brands fa-youtube"></i></span>
+												<span>${item.snippet.publishedAt}</span>
                     </a>
                 </div>
-                <div class="inner">
-                    <span class="number">${index + 1}</span>
-                    <h1 data-vid="${item.snippet.resourceId.videoId}">
+                <div class="text">
+                    <h2 data-vid="${item.snippet.resourceId.videoId}">
                     ${item.snippet.title}
-                    </h1>         
+                    </h2>         
                     <p>${desc}</p>
+										<a class="view" href="#" data-vid="${item.snippet.resourceId.videoId}">VIEW MORE</a>
                 </div>
             </article>
             `;

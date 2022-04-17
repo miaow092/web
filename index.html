@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,29 @@
     <title>기업형 웹</title>
     <script src="https://kit.fontawesome.com/b6f619d630.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>
-    <script defer src="js/main.js"></script>
+    <!-- <script defer src="js/main.js"></script> -->
     <script defer src="js/anime.js"></script>
 
 </head>
+
 <body>
-    
+
+    <!--popup-->
+
+    <div class="popUp">
+
+        <div class="inner">
+            <div class="wrap">
+                <div class="pic">
+                </div>
+                <div class="text"></div>
+            </div>
+        </div>
+    </div>
+
     <!--header-->
     <header id="header">
         <div class="inner">
@@ -35,7 +50,7 @@
                     <li><a href="#"><i class="fas fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
-        
+
             <!---햄버거 버튼--->
             <a href="#" class="btnCall">
                 <span>메뉴호출</span>
@@ -63,73 +78,80 @@
             </nav>
         </div>
     </header>
-    
+
     <!--figure-->
     <figure id="figure">
-            
-        <div class="inner">
-            <aside class="popup">
-                <div class="top"></div>
-                <div class="rigth"></div>
-                <div class="bottom"></div>
-                <div class="left"></div>
-                <div class="inner">
-                    <div class="line">
-                        <span>40% DISCOUNT</span>
-                        <span>SUPER SALE</span>
-                        <span>BEST OFFER</span>
-                    </div>
-                    <div class="text">40% off</div>
-                    <div class="content">
-                        <div class="wrap">
-                            <input type="checkbox" id="check">
-                            <label for="check">Don't watch it today</label>
-                        </div>
-                        <a href="#" class="close">CLOSE</a>
-                    </div>
-                </div>
-            </aside>
-        </div>
 
         <div class="swiper mySwiper">
-            
+
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/main1.jpeg" alt="main_image1">
-                    <div class="tex">
-                        <h1>Lorem ipsum dolor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur.<br>Veritatis sequi, autem dolorum!</p>
+                    <img src="img/main_c1.jpeg" alt="main_image1">
+                    <div class="text">
+                        <h1> Nadiia for<br /> WILD FAWN</h1>
+                    </div>
+                    <div class="back"></div>
+                    <div class="des">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias doloremque
+                            ipsum? Minus et non aliquid libero quas excepturi magnam, voluptas deleniti assumenda.<br />
+                            <a href="#">Watch more</a>
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/main2.jpeg" alt="main_image2">
-                    <div class="tex">
-                        <h1>Lorem ipsum dolor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur.<br>Veritatis sequi, autem dolorum!</p>
+                    <img src="img/main_c2.jpeg" alt="main_image2">
+                    <div class="text">
+                        <h1> Lorem ipsum<br /> dolor aimt</h1>
+                    </div>
+                    <div class="back"></div>
+                    <div class="des">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias doloremque
+                            ipsum? Minus et non aliquid libero quas excepturi magnam, voluptas deleniti assumenda.<br />
+                            <a href="#">Watch more</a>
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/main3.jpeg" alt="main_image3">
-                    <div class="tex">
-                        <h1>Lorem ipsum dolor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur.<br>Veritatis sequi, autem dolorum!</p>
+                    <div class="text">
+                        <h1> Lorem ipsum<br /> dolor aimt</h1>
+                    </div>
+                    <div class="back"></div>
+                    <div class="des">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias doloremque
+                            ipsum? Minus et non aliquid libero quas excepturi magnam, voluptas deleniti assumenda.<br />
+                            <a href="#">Watch more</a>
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/main4.jpeg" alt="main_image4">
-                    <div class="tex">
-                        <h1>Lorem ipsum dolor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur.<br>Veritatis sequi, autem dolorum!</p>
+                    <div class="text">
+                        <h1> Lorem ipsum<br /> dolor aimt</h1>
+                    </div>
+                    <div class="back">
+                        <img src="img/main_b2.jpeg">
+                    </div>
+                    <div class="des">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias doloremque
+                            ipsum? Minus et non aliquid libero quas excepturi magnam, voluptas deleniti assumenda.<br />
+                            <a href="#">Watch more</a>
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="img/main5.jpeg" alt="main_image5">
-                    <div class="tex">
-                        <h1>Lorem ipsum dolor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur.<br>Veritatis sequi, autem dolorum!</p>
+                    <div class="text">
+                        <h1> Lorem ipsum<br /> dolor aimt</h1>
+                    </div>
+                    <div class="back"></div>
+                    <div class="des">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias doloremque
+                            ipsum? Minus et non aliquid libero quas excepturi magnam, voluptas deleniti assumenda.<br />
+                            <a href="#">Watch more</a>
+                        </p>
                     </div>
                 </div>
-                    
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -173,14 +195,16 @@
                 </article>
                 <article class="text">
                     <h1>Wild Fawn x Mira Lou<br>
-                    Collaboration</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est fugiat eaque dolor voluptatem, cupiditate nobis aspernatur ratione eius voluptatum harum corrupti odio consequatur, tempore ullam maiores iure ex at? Molestias.</p>
+                        Collaboration</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est fugiat eaque dolor voluptatem,
+                        cupiditate nobis aspernatur ratione eius voluptatum harum corrupti odio consequatur, tempore
+                        ullam maiores iure ex at? Molestias.</p>
                     <a href="#">Explore</a>
                 </article>
             </div>
         </div>
     </section>
-    
+
     <!--categories-->
     <section id="categories">
         <div class="inner">
@@ -207,8 +231,8 @@
                     <div>
                         <img src="img/category3.jpeg" alt="">
                         <div class="text">
-                        <h2>Rings</h2>
-                        <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                            <h2>Rings</h2>
+                            <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </article>
@@ -216,8 +240,8 @@
                     <div>
                         <img src="img/category4.jpeg" alt="">
                         <div class="text">
-                        <h2>The Zodiac Collection</h2>
-                        <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                            <h2>The Zodiac Collection</h2>
+                            <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </article>
@@ -225,8 +249,8 @@
                     <div>
                         <img src="img/category5.jpeg" alt="">
                         <div class="text">
-                        <h2>bracelet</h2>
-                        <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                            <h2>bracelet</h2>
+                            <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </article>
@@ -239,10 +263,15 @@
         <div class="inner">
             <div class="wrap">
                 <article class="text">
-                        <h1>About Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui tenetur repudiandae vitae quidem, ipsa quaerat esse nihil excepturi quod ratione minima natus eligendi voluptatibus digniss   imos. Sapiente vel corporis repellendus ducimus cupiditate optio veniam, inventore consequatur quo modi cum necessitatibus?</p>
-                        <p class="secend">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magni? Mollitia non, itaque placeat quo dolorum velit deleniti vero perspiciatis enim eos id nostrum cum numquam. Rem tempora excepturi est id minima voluptatem laboriosam error!</p>
-                        <a href="about.html">More</a>
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui tenetur repudiandae vitae
+                        quidem, ipsa quaerat esse nihil excepturi quod ratione minima natus eligendi voluptatibus
+                        digniss imos. Sapiente vel corporis repellendus ducimus cupiditate optio veniam, inventore
+                        consequatur quo modi cum necessitatibus?</p>
+                    <p class="secend">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magni?
+                        Mollitia non, itaque placeat quo dolorum velit deleniti vero perspiciatis enim eos id nostrum
+                        cum numquam. Rem tempora excepturi est id minima voluptatem laboriosam error!</p>
+                    <a href="about.html">More</a>
                 </article>
                 <article class="pic">
                     <img src="img/about.jpeg" alt="">
@@ -295,4 +324,5 @@
     </footer>
 
 </body>
+
 </html>
